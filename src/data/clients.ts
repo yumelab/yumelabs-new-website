@@ -1,0 +1,20 @@
+export const ClientList = [
+    'amazon-logo',
+    'transasia-logo',
+    'armstrong-logo',
+    'giesecke-devrient-logo',
+    'thirteen-logo',
+    'ieac-iit-madras-logo',
+    'simplicontract-logo',
+    'do-it-zero-logo', 
+    'imentr-logo',
+    'twenty-two-yards-logo',
+    'maiven-logo',
+    'mojo-box-logo',
+    'dimagi-logo',
+    'lomads-logo',
+    'book-my-pooja-logo',
+    'appro-labs-logo',
+    'digiprompt-logo', 
+    'good-flows-logo'
+];

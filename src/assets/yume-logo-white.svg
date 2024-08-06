@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Group_5086" data-name="Group 5086" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 23.7 32">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Logo_exploration_v_copy" data-name="Logo exploration v copy">
+    <rect id="Rectangle_3326" data-name="Rectangle 3326" class="cls-2" x="0" width="6.9" height="6.9"/>
+    <path id="Path_35878" data-name="Path 35878" class="cls-1" d="M6.9,32H0c0-4.7,2.9-10.4,5.3-13.8,1.3-1.7,2.6-3.3,3.9-4.9,1.2-1.5,2.4-2.9,3.5-4.4C14.5,6.6,16.8,3,16.8,0h6.9c0,5-2.9,9.6-5.4,13-1.2,1.6-2.5,3.2-3.8,4.7-1.3,1.5-2.5,3-3.6,4.6-2.3,3.2-4,7.3-4,9.7h0Z"/>
+  </g>
+</svg>
