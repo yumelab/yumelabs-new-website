@@ -15,7 +15,7 @@ const Partner = (props:Props) => {
             className="flex flex-col gap-8"
             href={url}
             target="_blank"> 
-            <div className="w-full md:max-h-fit h-1/2 bg-gray-100 md:p-24 group aspect-square">
+            <div className="w-full md:max-h-fit h-full bg-gray-100 md:p-24">
                 <Image
                     src={image} 
                     className="w-full h-full rounded-full object-cover aspect-square"

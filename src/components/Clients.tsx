@@ -11,7 +11,7 @@ const Clients = () =>{
                         <li key={i} className="">
                             <Image
                                 className="transition-all grayscale hover:grayscale-0 h-12"
-                                src={require(`../assets/clients/${client}.svg`)} 
+                                src={`/clients/${client}.svg`} 
                                 width={100} 
                                 height={100} 
                                 alt={client} />
@@ -25,7 +25,7 @@ const Clients = () =>{
                         <li key={i} className="">
                             <Image
                                 className="transition-all grayscale hover:grayscale-0 h-12"
-                                src={require(`../assets/clients/${client}.svg`)} 
+                                src={`/clients/${client}.svg`} 
                                 width={100} 
                                 height={100} 
                                 alt={client} />

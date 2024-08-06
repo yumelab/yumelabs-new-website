@@ -1,32 +1,32 @@
-'use client' 
-import { ArrowRight } from '@geist-ui/icons'
+import * as Icon from '@geist-ui/icons';
 
-interface ComponentProps{
-    style?:boolean;
-    color?:string;
-    label: string;
+
+
+interface Props{
+    variant:'icon' | 'text';
+    style:'outline'|'solid';
+    size:'xs'| 'sm'|'md'|'lg'|'xl';
+    label?:string;
+    texticon?:boolean;
+    iconName?: keyof typeof Icon;
     type: 'button' | 'submit';
-    size: 'md' | 'sm' | 'xs';
     onClick?: () => void;
 }
 
-const Button = (props:ComponentProps) =>{
-    const { label, type, onClick, size,style,color} = props; 
+const Button = (props:Props) =>{
+    const {variant,style,size,label,iconName,type,texticon, onClick} = props
 
-    const baseClass = `max-w-fit flex items-center justify-center gap-2 text-${size} tracking-widest whitespace-nowrap px-8 py-4 cursor-pointer font-medium uppercase transition-all ease-in-out delay-150 rounded-full`;
-    const solidClass = `bg-black text-white hover:bg-gray-800`;
-    const borderClass = `border-${color} border-2 text-${color} hover:bg-black hover:text-white hover:border-transparent`;
-
-    return(
-        (style)
-        ? 
-        <button className={`${baseClass} ${solidClass}`} type={type ? "submit" : "button"} onClick={onClick}>
-            <span>{label}</span> <ArrowRight  size={24}/>
-        </button>
-        :
-        <button className={`${baseClass} ${borderClass}`} type={type ? "submit" : "button"} onClick={onClick}>
-            <span>{label}</span> <ArrowRight  size={24}/>
-        </button>
+    const base = 'rounded-full max-w-fit max-w-fit flex items-center gap-4'
+    const solidStyle= 'bg-black hover:bg-gray-800 text-white'
+    const outlineStyle = 'border border-gray-300 hover:border-transparent hover:bg-gray-200 text-black' 
+    const padding = `${(variant=== 'icon')?'p-4':'px-8 py-4'}` 
+    const IconComponent = Icon[iconName];
+    return ( 
+        <button 
+            className={`${base} ${padding} text-${size} ${style === 'solid' ? solidStyle : outlineStyle} `} 
+            type={type ? "submit" : "button"} onClick={onClick}>
+            {(variant=== 'icon') ?  <IconComponent size={24}/>  : label}  {texticon? <Icon.ArrowRight size={24}/> : ''}
+        </button> 
     )
 }
 

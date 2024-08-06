@@ -1,7 +1,7 @@
  
 import Link from "next/link"; 
 import { AppRoutes } from '@/constants/routes';  
-import Button from '@/components/Button';
+import Button from '@/components/Button'; 
 
 const NavLinks = () =>{   
     return(
@@ -11,7 +11,7 @@ const NavLinks = () =>{
                 href={AppRoutes.OUR_WORK}>
                 Work
             </Link> 
-            <Link
+           <Link
                 className='w-full h-full whitespace-nowrap text-slate-500 text-sm'
                 href={AppRoutes.ABOUT_US}>
                 About Us
@@ -22,13 +22,15 @@ const NavLinks = () =>{
                 Services
             </Link> 
             <Link 
+            className="whitespace-nowrap"
                 href={AppRoutes.CONTACT_US}>
-                <Button
-                    style
-                    label='Contact Us'
-                    size='xs'
-                    type='button'
-                />
+                    <Button
+                        label="Contact Us"
+                        variant="text"
+                        style="solid"
+                        size="xs"
+                        type="button"
+                        /> 
             </Link>    
         </div>
     )

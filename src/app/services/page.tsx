@@ -37,7 +37,12 @@ type Content = {
     description:string;
 }
 
+import GoodFlows from '@/assets/work/good-flows.webp'
+import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
+import DoItZero from '@/assets/work/do-it-zero.webp'
+
 const ServicesHome = () =>{  
+    const Projects = [GoodFlows,DoItZero,TwentyTwoYards]
     // const Images = [AIDesign, ProductInnovation, UXDesing]
     const menu = [{title:'AI Experince Design',route:'#ai'},{title:'Product Innovation',route:'#product'},{title:'Digital Design',route:'#design'}]
     const [active,setActive] = useState(0)
@@ -138,13 +143,13 @@ const ServicesHome = () =>{
                 <h2 className='text-4xl leading-tight font-medium'>Selected <br /> Projects</h2>
                 <div className='flex gap-2 overflow-x-hidden'>
                     {
-                        ProjectsList.filter((item,i) => i<3 ).map((project:Content,i)=>(
+                        ProjectsList.filter((item,i) => i>3 ).map((project:Content,i)=>(
                             <div key={i} className='w-1/3'>
                                 <Project 
                                     title={project.title}
                                     description={project.description}
                                     tags={project.tags}
-                                    img={DummyImg.src}/>
+                                    img={Projects[i].src}/>
                             </div>
                         ))
                     }

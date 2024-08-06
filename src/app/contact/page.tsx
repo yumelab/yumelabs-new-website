@@ -1,9 +1,8 @@
-
 import Footer from "@/components/Footer"; 
 import Section from "@/components/Section";
 import Formcs from '@/components/Formcs';
 import MailForm from '@/components/MailForm';
-import TempButton from "@/components/TempButton";
+import Button from "@/components/Button";
 
 const Contact = () =>{
     return(
@@ -16,29 +15,7 @@ const Contact = () =>{
                 <div className="md:w-1/2">
                 <MailForm/>
                 </div> 
-            </section>
-            {/* <TempButton 
-                img='arrow'
-                variant="icon"
-                style="solid"
-                size="sm"
-                type="button"
-                /> 
-            <TempButton 
-                img='arrow'
-                variant="icon"
-                style="outline"
-                size="sm"
-                type="button"
-                /> 
-
-             <TempButton
-                label="Get Started"
-                variant="text"
-                style="outline"
-                size="xl"
-                type="button"
-                />     */}
+            </section> 
             <Footer/>
         </main>
     )

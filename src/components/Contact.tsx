@@ -1,10 +1,10 @@
 import Link from "next/link"; 
-import Image from "next/image"
-import Button from '@/components/Button';
+import Image from "next/image" 
 import { AppRoutes } from '@/constants/routes';  
 
 import contactGraphics from '@/assets/contact-us-graphics.webp'
 import contactBackground from '@/assets/contact-us-bg.webp'
+import Button from "./Button";
 
 const Contact = () =>{
     return (
@@ -24,12 +24,13 @@ const Contact = () =>{
                 </div>
                 <Link 
                     href={AppRoutes.CONTACT_US}>
-                    <Button
-                        style={true} 
-                        label='Get in Touch'
-                        size='md'
-                        type='button'
-                    />
+                   <Button
+                        label="Get in Touch"
+                        variant="text"
+                        style="solid"
+                        size="xl"
+                        type="button"
+                        />   
                 </Link>  
             </div>
             <div className="md:inline-block md:w-1/2 h-full hidden">

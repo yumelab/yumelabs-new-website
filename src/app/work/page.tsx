@@ -12,7 +12,16 @@ import { ProjectsList } from "@/data/projects";
 import { AppRoutes } from "@/constants/routes";
 import { ProjectType } from "../../types";
 
+import DoItZero from '@/assets/work/do-it-zero.webp'
+import Maiven from '@/assets/work/maiven.webp'
+import BookMyPooja from '@/assets/work/book-my-pooja.webp'
+import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
+import IEACIITMadras from '@/assets/work/ieac-iit-madras.webp'
+import GoodFlows from '@/assets/work/good-flows.webp'
+import ZeroEmission from '@/assets/work/good-flows.webp'
+
 const Work = () => {
+  const Projects = [Maiven,ZeroEmission,IEACIITMadras,BookMyPooja,GoodFlows,DoItZero,TwentyTwoYards]
   return (
     <main className="container md:max-w-screen-xl mx-auto px-8 md:px-0 flex flex-col">
       <Hero />
@@ -22,18 +31,18 @@ const Work = () => {
             (project: ProjectType, i) => (
               <div key={i}>
                 {0 < i && i < 3 ? (
-                  <Project
-                    title={project.title}
-                    description={project.description}
-                    tags={project.tags}
-                    img={DummyImg.src}
-                  />
-                ) : (
                   <ProjectSmall
                     title={project.title}
                     description={project.description}
                     tags={project.tags}
-                    img={DummyImg.src}
+                    img={Projects[i].src}
+                  />
+                ) : (
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    tags={project.tags}
+                    img={Projects[i].src}
                   />
                 )}
               </div>

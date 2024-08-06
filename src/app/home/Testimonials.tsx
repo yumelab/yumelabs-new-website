@@ -3,11 +3,10 @@
 import { useState } from "react"
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-
-
-import ImageButton from "@/components/ImageButton"
+ 
 import Section from "@/components/Section"
 import Testimonial from "@/components/Testimonial"
+import Button from "@/components/Button";
 
 import {Reviews} from "@/data/reviews"
 
@@ -43,17 +42,21 @@ const Testimonials = () =>{
                         size="2xl"/> 
                 </div>
     
-                <div className="flex gap-8 md:pl-24 pl-12">
-                    <ImageButton 
-                        color="200"
-                        onClick={prevSlide}
-                        direction
-                        size="sm"/>
-                    <ImageButton 
-                        color="300"
-                        onClick={nextSlide}
-                        direction={false}
-                        size="sm"/>
+                <div className="flex gap-8 md:pl-24 pl-12"> 
+                    <Button 
+                        iconName="ArrowLeft"
+                        variant="icon"
+                        style="outline"
+                        size="sm"
+                        type="button"
+                        onClick={prevSlide}/> 
+                    <Button 
+                    iconName="ArrowRight"
+                        variant="icon"
+                        style="solid"
+                        size="sm"
+                        type="button"
+                        onClick={nextSlide}/>  
                 </div>
             </div>
         </section>

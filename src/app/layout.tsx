@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   title: "Yume Labs",
   description: "Yume Labs is a boutique UX/UI Design, Identity Design, and Industrial Design agency in Bangalore, India helping ambitious brands scale globally through Experience-led Growth.",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{

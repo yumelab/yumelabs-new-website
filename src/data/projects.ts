@@ -31,43 +31,38 @@ export const ServicesList = [
 
 export const ProjectsList = [
     {
+        "tags":["SaaSUX","Enterprise"],
+        "title":"Maiven",
+        "description":"Low friction split panel enterprise UX for the Next in Martech SaaS platforms."
+    },
+    {
         "tags":["ux/ui","development"],
-        "title":"maiven",
+        "title":"Zero Emission",
         "description":"Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
     },
     {
         "tags":["ux/ui","development"],
-        "title":"maiven",
+        "title":"IEAC IIT Madras",
         "description":"Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
     },
     {
-        "tags":["ux/ui","development"],
-        "title":"maiven",
-        "description":"Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
+        "tags":["EcommerceUX","DesignedForBharat"],
+        "title":"BookMypooja",
+        "description":"Fresh Hindu religious services ecommerce experience for the Next in Spiritualtech."
     },
     {
-        "tags":["ux/ui","development"],
-        "title":"maiven",
-        "description":"Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
+        "tags":["ConversationalUX","MobileUX"],
+        "title":"Good Flows",
+        "description":"Unique swipe gestures to drive the Next in conversational mobile UX."
     },
     {
-        "tags":["ux/ui","development"],
-        "title":"maiven",
-        "description":"Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
+        "tags":["Branding","Gamification"],
+        "title":"Do It Zero",
+        "description":"Minimalist identity design system and gamification for the Next in Climatetech."
     },
     {
-        "tags":["ux/ui","development"],
-        "title":"maiven",
-        "description":"Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
-    },
-    {
-        "tags":["ux/ui","development"],
-        "title":"maiven",
-        "description":"Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
-    },
-    {
-        "tags":["ux/ui","development"],
-        "title":"maiven",
-        "description":"Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
+        "tags":["MobileUX","Gamification"],
+        "title":"22 Yards",
+        "description":"Extensive gamification system driven UX with custom graphics for the Next in Sportstech."
     }
 ]

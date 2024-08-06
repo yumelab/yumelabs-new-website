@@ -1,7 +1,7 @@
 
-import { FormEvent } from "react";
-import Button from "./Button"; 
+import { FormEvent } from "react"; 
 import { Terms } from '@/data/terms';
+import Button from "./Button";
 
 const MailForm = () =>{
     const handleSubmit = async (e:FormEvent<HTMLFormElement>) => {
@@ -51,11 +51,13 @@ const MailForm = () =>{
                 <span className="text-xs">{Terms.form.terms}</span>
             </label>
             <div className='flex justify-end'>
-                <Button
-                    label="Submit"
-                    type='submit'
-                    size='md' 
-                />
+            <Button
+                label="Submit"
+                variant="text"
+                style="outline"
+                size="lg"
+                type="submit"
+                /> 
             </div>  
         </form>
     )

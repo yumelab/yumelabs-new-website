@@ -1,9 +1,9 @@
 // import ButtonGrad from "@/components/ButtonsGrad";
 import Link from "next/link";
-import Image from "next/image"
-import Button from "@/components/Button";
+import Image from "next/image" 
 
 import { AppRoutes } from '@/constants/routes'; 
+import Button from "@/components/Button";
 
 interface ComponentProps{
     title: string;
@@ -30,12 +30,13 @@ const Offerings = (props:ComponentProps) =>{
             <Link
                 className="z-30"
                 href={AppRoutes.CONTACT_US}>
-                <Button
-                    label='Contact Us' 
-                    type='button'
-                    size="xs"
-                    style={false}
-                />
+                    <Button
+                        label="Contact Us"
+                        variant="text"
+                        style="solid"
+                        size="md"
+                        type="button"
+                        />  
             </Link>
         </div>
     )

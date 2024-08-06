@@ -1,5 +1,5 @@
 import Innovation from "./home/InnovationDum";
-import Projects from "./home/Projects";
+import Work from "./home/Work";
 import Reels from "./home/Reels";
 import Hero from "./home/Hero";
 import Services from "./home/Services";
@@ -12,12 +12,12 @@ export default function Home() {
   return (
     <main className="container md:max-w-screen-xl flex flex-col mx-auto px-8">
       <Hero />
-      <Reels />
+       <Reels />
       <Innovation />
       <Clients/>
-      <Projects />
+      <Work />
       <Services />
-      <Testimonials/>
+      <Testimonials/> 
       <Contact/>
       <Footer />
     </main>
