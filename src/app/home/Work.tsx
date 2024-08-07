@@ -18,7 +18,7 @@ import BookMyPooja from '@/assets/work/book-my-pooja.webp'
 import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
 import IEACIITMadras from '@/assets/work/ieac-iit-madras.webp'
 import GoodFlows from '@/assets/work/good-flows.webp'
-import ZeroEmission from '@/assets/work/good-flows.webp'
+import ZeroEmission from '@/assets/work/zero-emission.webp'
 
 const Projects = () => {
   const Projects = [Maiven,ZeroEmission,IEACIITMadras,BookMyPooja,GoodFlows,DoItZero,TwentyTwoYards]

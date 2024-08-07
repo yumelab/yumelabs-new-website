@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from "react";
 
 import Section from "@/components/Section";
@@ -23,17 +25,19 @@ const Main = () => {
         subtitle="our services"
         title="High-potential global brands trust Yume Labs for better customer advocacy, stronger investor trust, and higher media love."
       />
-      <div className="flex flex-nowrap gap-16 overflow-x-scroll"> 
-          {
-            ServicesList.map((item,i)=>(
-                <Service
-                  key={i}
-                  title={item.title}
-                  description={item.description}
-                  image={imageList[i].src}
-                />
-            ))
-          }
+      <div className="flex flex-nowrap item-center space-x-10 max-h-50"> 
+          <div className="w-screen shrink-0 overflow-x-hidden flex gap-8 py-8">
+            {
+              ServicesList.map((item,i)=>(
+                  <Service
+                    key={i}
+                    title={item.title}
+                    description={item.description}
+                    image={imageList[i].src}
+                  />
+              ))
+            }
+          </div>
         </div> 
     </section>
   );

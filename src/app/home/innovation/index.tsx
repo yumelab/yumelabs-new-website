@@ -5,7 +5,7 @@ import Image from "next/image";
 import Focus from "./Focus";
 import Button from "@/components/Button";
 
-import ProductInnovation from "@/assets/innovation/product-innovation.svg";
+import ProductInnovation from "@/assets/innovation/product-innovation.png";
 import IndustrialDesign from "@/assets/innovation/industrial-design.webp";
 import UXUI from "@/assets/innovation/uiux.webp";
 
