@@ -52,7 +52,8 @@ const Work = () => {
         <div className="flex items-center md:py-16 justify-center">
           <Link href={AppRoutes.SERVICES}>
             <Button
-              style={false}
+              variant="text"
+              style="outline"
               label="Load More Projects"
               size="md"
               type="button"

@@ -15,7 +15,7 @@ const Project = (props:Props) =>{
             <div className="w-full overflow-hidden aspect-square">
                 <Image
                     alt="project"
-                    className="object-cover w-full h-full transform transition duration-500 hover:scale-125"
+                    className="object-cover w-full h-full transform transition duration-500 hover:scale-125 rounded-md"
                     width={400}
                     height={400} 
                     src={img}/>

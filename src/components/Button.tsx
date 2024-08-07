@@ -20,7 +20,7 @@ const Button = (props:Props) =>{
     const solidStyle= 'bg-black hover:bg-gray-800 text-white'
     const outlineStyle = 'border border-gray-300 hover:border-transparent hover:bg-gray-200 text-black' 
     const padding = `${(variant=== 'icon')?'p-4':'px-8 py-4'}` 
-    const IconComponent = Icon[iconName];
+    const IconComponent = (iconName!=undefined) ? Icon[iconName] : Icon.ArrowDownRight;
     return ( 
         <button 
             className={`${base} ${padding} text-${size} ${style === 'solid' ? solidStyle : outlineStyle} `} 

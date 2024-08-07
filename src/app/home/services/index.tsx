@@ -8,7 +8,7 @@ import pioneeringInnovation from '@/assets/services/pioneering-innovation.webp'
 import compellingDesing from '@/assets/services/compelling-design.webp'
 import aiInnovation from '@/assets/services/ai-innovation.webp'
 
-const Services = () => {
+const Main = () => {
   const imageList = [
     deeperInsight,
     pioneeringInnovation,
@@ -18,7 +18,7 @@ const Services = () => {
 
   return (
     <section className="flex flex-col gap-16 py-32 relative">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-screen h-full bg-gray-100 -z-10"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-screen h-full bg-gray-50 -z-10"></div>
       <Section
         subtitle="our services"
         title="High-potential global brands trust Yume Labs for better customer advocacy, stronger investor trust, and higher media love."
@@ -39,4 +39,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Main;

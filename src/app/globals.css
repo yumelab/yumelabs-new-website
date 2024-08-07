@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb)); 
   overflow-x: hidden;
@@ -29,5 +33,5 @@ body {
 
 
 .overlay{
-  border-image:fill 1 linear-gradient(hsl(240 100% 50% / .3) , hsl(0 100% 50% / 0.3));
+  border-image:fill 1 linear-gradient(hsla(0, 0%, 0%, 0.265) , hsla(0, 0%, 0%, 0.081));
 }

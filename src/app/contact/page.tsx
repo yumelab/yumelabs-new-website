@@ -1,8 +1,6 @@
 import Footer from "@/components/Footer"; 
-import Section from "@/components/Section";
-import Formcs from '@/components/Formcs';
-import MailForm from '@/components/MailForm';
-import Button from "@/components/Button";
+import Section from "@/components/Section"; 
+import MailForm from '@/components/MailForm'; 
 
 const Contact = () =>{
     return(

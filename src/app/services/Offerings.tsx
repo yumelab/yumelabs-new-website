@@ -16,11 +16,11 @@ interface ComponentProps{
 const Offerings = (props:ComponentProps) =>{
     const {title,desccription,image,overlay, opacity} = props  
     return(
-        <div className="relative flex flex-col gap-8 md:py-16 md:px-16 p-8 text-white overlay">
+        <div className="relative flex flex-col gap-8 md:py-16 md:px-16 p-8 overlay text-white">
             <div className="absolute top-0 left-0 rounded-2xl w-full h-full -z-10">
                 <Image
                     alt="project"
-                    className="object-cover w-full h-full aspect-auto"
+                    className="object-cover w-full h-full aspect-auto rounded-md "
                     width={400}
                     height={400} 
                     src={image}/>
