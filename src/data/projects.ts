@@ -38,12 +38,12 @@ export const ProjectsList = [
     {
         "tags":["ux/ui","development"],
         "title":"Zero Emission",
-        "description":"Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
+        "description":"Minimal B2B SaaS experience for a pioneering Climatetech platform in commercial shipping."
     },
     {
         "tags":["ux/ui","development"],
         "title":"IEAC IIT Madras",
-        "description":"Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
+        "description":"Fully configurable modular enterprise UX for the Next in Energy Management."
     },
     {
         "tags":["EcommerceUX","DesignedForBharat"],

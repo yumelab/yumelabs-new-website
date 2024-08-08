@@ -28,7 +28,7 @@ const ProjectSmall = (props:Props) =>{
                 }
             </div>
             <h2 className="text-2xl capitalize font-medium">{title}</h2>
-            <p className="text-gray-500 md:w-full font-light text-sm md:text-base">{description}</p>
+            <p className="text-gray-500 md:w-2/3 text-sm">{description}</p>
         </div>
     )
 }
