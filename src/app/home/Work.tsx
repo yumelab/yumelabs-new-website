@@ -61,7 +61,7 @@ const Projects = () => {
             ))
         }
       </div>
-      <div className='flex items-center md:py-16 justify-center'>
+      <div className='flex items-center justify-center'>
         <Link 
           href={AppRoutes.SERVICES}>
             <Button
