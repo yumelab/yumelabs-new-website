@@ -12,8 +12,14 @@ const poppins = Poppins({
  });
 
 export const metadata: Metadata = {
-  title: "Yume Labs",
+  title: {
+    default:"Yume Labs",
+    template: "%s : Yume Labs",
+  },
   description: "Yume Labs is a boutique UX/UI Design, Identity Design, and Industrial Design agency in Bangalore, India helping ambitious brands scale globally through Experience-led Growth.",
+  twitter:{ 
+    card:"summary_large_image"
+  }, 
 };
 
 export default function RootLayout({

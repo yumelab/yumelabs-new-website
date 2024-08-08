@@ -1,4 +1,6 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
 import Hero from "./Hero";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -19,6 +21,12 @@ import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
 import IEACIITMadras from '@/assets/work/ieac-iit-madras.webp'
 import GoodFlows from '@/assets/work/good-flows.webp'
 import ZeroEmission from '@/assets/work/zero-emission.webp'
+
+
+export const metadata: Metadata = {
+  title: "Our Portfolio",
+  description: "Yume Labs is a boutique UX/UI Design, Identity Design, and Industrial Design agency in Bangalore, India helping ambitious brands scale globally through Experience-led Growth.",
+};
 
 const Work = () => {
   const Projects = [Maiven,ZeroEmission,IEACIITMadras,BookMyPooja,GoodFlows,DoItZero,TwentyTwoYards]

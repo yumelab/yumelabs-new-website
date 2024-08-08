@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Footer from "@/components/Footer"; 
 import Section from "@/components/Section"; 
 import MailForm from '@/components/MailForm'; 
+
+
+export const metadata: Metadata = {
+    title: "Contact Us",
+    description: "Yume Labs is a boutique UX/UI Design, Identity Design, and Industrial Design agency in Bangalore, India helping ambitious brands scale globally through Experience-led Growth.",
+};
 
 const Contact = () =>{
     return(

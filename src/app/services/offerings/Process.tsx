@@ -2,7 +2,7 @@
 import Image from "next/image"; 
 
 interface ComponentProps{
-    icon:string;
+    icon?:string;
     section:string;
     title:string;
     description:string;
