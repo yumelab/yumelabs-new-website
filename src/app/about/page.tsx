@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Founders from "./Founders";
-import Partners from "./Parteners";
+// import Partners from "./Parteners";
 import Workplace from "./Workplace";
 
 import AboutBackground from '@/assets/bg-about.jpg'
@@ -29,7 +29,7 @@ const About = () =>{
                 </div>
             </section>
             <Founders/>
-            <Partners/>
+            {/* <Partners/> */}
             <Workplace/>
             <Contact />
             <Footer />

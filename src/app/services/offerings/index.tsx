@@ -15,10 +15,10 @@ import ProductInnovation from '@/assets/services/product-innovation.webp'
 import DigitalBg from '@/assets/services/digital.webp'
 
 
+import {FocusList} from "@/data/focus"
+
 const Main = () =>{
-    
-    // const Images = [AIDesign, ProductInnovation, UXDesing]
-    const menu = [{title:'AI Experinces',route:'#ai-experiences'},{title:'Product Innovation',route:'#product-innovation'},{title:'Experience Design',route:'#experince-design'}]
+
     const [active,setActive] = useState(0)
 
     // Update the activeNav state when the pathname changes.
@@ -30,7 +30,7 @@ const Main = () =>{
         <section className="grid md:grid-cols-5 grid-cols-1 gap-8 md:-mt-16 pb-64 align-items:flex-start">
             <div className="col-span-1 flex md:flex-col gap-4 h-fit sticky top-24"> 
                 {
-                    menu.map((item,i)=>(
+                    FocusList.map((item,i)=>(
                         <Link
                             key={i}
                             onClick={() => handleClick(i)}
@@ -44,8 +44,8 @@ const Main = () =>{
             <div className="md:col-start-3 md:col-span-3 flex flex-col md:gap-24"> 
                 <div id="ai-experiences" className="flex flex-col gap-8 md:pt-24"> 
                     <Offerings
-                        title="AI Experinces"
-                        desccription="Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
+                        title={FocusList[0].title}
+                        desccription={FocusList[0].description}
                         image={AIDesign.src}
                         overlay="yellow"
                         opacity="80"
@@ -65,8 +65,8 @@ const Main = () =>{
                 </div>
                 <div id="product-innovation" className="flex flex-col gap-8 md:pt-24">
                     <Offerings
-                        title="Product Innovation"
-                        desccription="Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
+                        title={FocusList[1].title}
+                        desccription={FocusList[1].description}
                         image={ProductInnovation.src}
                         overlay="blue"
                         opacity="50"
@@ -86,8 +86,8 @@ const Main = () =>{
                 </div>
                 <div id="experince-design" className="flex flex-col gap-8 md:pt-24"> 
                     <Offerings
-                        title="Experience Design"
-                        desccription="Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
+                        title={FocusList[2].title}
+                        desccription={FocusList[2].description}
                         image={DigitalBg.src}
                         overlay="red"
                         opacity="30"

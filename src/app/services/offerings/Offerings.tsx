@@ -16,7 +16,7 @@ interface ComponentProps{
 const Offerings = (props:ComponentProps) =>{
     const {title,desccription,image,overlay, opacity} = props  
     return(
-        <div className="relative flex flex-col gap-8 md:py-16 md:px-16 p-8 overlay text-white">
+        <div className="relative flex flex-col gap-8 md:py-16 md:px-16 p-8 overlay">
             <div className="absolute top-0 left-0 rounded-2xl w-full h-full -z-10">
                 <Image
                     alt="project"
@@ -25,8 +25,8 @@ const Offerings = (props:ComponentProps) =>{
                     height={400} 
                     src={image}/>
             </div>
-            <h2 className="text-4xl z-30">{title}</h2>
-            <p className="md:w-2/3 z-30">{desccription}</p> 
+            <h2 className="text-4xl z-30 text-white">{title}</h2>
+            <p className="md:w-2/3 z-30 text-white">{desccription}</p> 
             <Link
                 className="z-30"
                 href={AppRoutes.CONTACT_US}>

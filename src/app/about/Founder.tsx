@@ -11,7 +11,7 @@ const Founder = (props:Props) => {
     const {picture, name,role,social} = props
     return(
         <div className="flex flex-col gap-8">
-            <div className="w-full h-fit bg-red-100">
+            <div className="w-full h-fit bg-gradient-to-t from-rose-100 to-yellow-50">
                 <Image
                     className="w-full h-full object-cover md:aspect-auto aspect-square"
                     src={picture}

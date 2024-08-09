@@ -6,14 +6,14 @@ import Focus from "./Focus";
 import Button from "@/components/Button";
 
 import ProductInnovation from "@/assets/innovation/product-innovation.png";
-import IndustrialDesign from "@/assets/innovation/industrial-design.webp";
-import UXUI from "@/assets/innovation/uiux.webp";
+import AIExperiences from "@/assets/innovation/industrial-design.webp";
+import ExperienceDesign from "@/assets/innovation/uiux.webp";
 
 import { AppRoutes } from "@/constants/routes";
 import {FocusList} from "@/data/focus"
 
 const Main = () => {
-  const FocusImages = [ProductInnovation,UXUI,IndustrialDesign]
+  const FocusImages = [AIExperiences,ProductInnovation,ExperienceDesign]
   return (
     <section className="flex gap-4 md:flex-row flex-col md:py-32 min-h-fit">
       <div className="md:w-1/3 bg-gray-100 p-9 rounded-lg flex flex-col md:gap-24 gap-16">
