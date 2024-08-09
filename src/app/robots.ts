@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next"; 
 
 export default function robot():MetadataRoute.Robots{
-    const baseURL = "https://yumelabs.com"
+    const baseURL = "https://yume-staging.web.app/"
     return {
         rules:[
             {

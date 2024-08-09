@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";  
+import {Poppins_S} from '@/app/fonts'
 import "./globals.css";
 
 import Header from "@/components/Header"; 
 import Metrics from "@/seo/Metrics" 
 import ogImage from "@/app/opengraph-image.png"
 
-const poppins = Poppins({
-  weight: ["100","200","300","400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-  display: "fallback", 
- });
+
 
  interface ExtendedMetadata extends Metadata {
   rating: {
@@ -24,7 +20,7 @@ const poppins = Poppins({
 }
 
 export const metadata: ExtendedMetadata = {
-  metadataBase: new URL('https://yumelabs.com'),
+  metadataBase: new URL('https://yume-staging.web.app/'),
   title: {
     default:"Yume Labs | UX/UI Design for AI, Embedded, Mobile, & Web",
     template: "%s - Yume Labs | UX/UI Design for AI, Embedded, Mobile, & Web",
@@ -50,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={Poppins_S.className}>
         <Header/> 
           {children}
         <Metrics />
