@@ -25,7 +25,7 @@ const Partner = (props:Props) => {
                 />
             </div>
             <div>
-                <h2 className="text-xl font-medium whitespace-break-spaces">{name}</h2>
+                <h2 className="text-xl font-medium whitespace-break-spaces text-black">{name}</h2>
                 <h4 className="text-gray-500 text-sm">{details}</h4> 
             </div> 
         </Link>

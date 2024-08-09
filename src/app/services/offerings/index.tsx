@@ -18,7 +18,7 @@ import DigitalBg from '@/assets/services/digital.webp'
 const Main = () =>{
     
     // const Images = [AIDesign, ProductInnovation, UXDesing]
-    const menu = [{title:'AI Experince Design',route:'#ai'},{title:'Product Innovation',route:'#product'},{title:'Digital Design',route:'#design'}]
+    const menu = [{title:'AI Experinces',route:'#ai-experiences'},{title:'Product Innovation',route:'#product-innovation'},{title:'Experience Design',route:'#experince-design'}]
     const [active,setActive] = useState(0)
 
     // Update the activeNav state when the pathname changes.
@@ -42,9 +42,9 @@ const Main = () =>{
                 } 
             </div>
             <div className="md:col-start-3 md:col-span-3 flex flex-col md:gap-24"> 
-                <div id="ai" className="flex flex-col gap-8 md:pt-24"> 
+                <div id="ai-experiences" className="flex flex-col gap-8 md:pt-24"> 
                     <Offerings
-                        title="AI Experince Design"
+                        title="AI Experinces"
                         desccription="Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
                         image={AIDesign.src}
                         overlay="yellow"
@@ -55,7 +55,7 @@ const Main = () =>{
                             offerringAIExperiences.map((item,i)=>(        
                                 <Process 
                                     key={i} 
-                                    section="product Innovation"
+                                    section="ai experiences"
                                     title={item.title}
                                     description={item.description}
                                 />       
@@ -63,7 +63,7 @@ const Main = () =>{
                         }
                     </div>  
                 </div>
-                <div id="product" className="flex flex-col gap-8 md:pt-24">
+                <div id="product-innovation" className="flex flex-col gap-8 md:pt-24">
                     <Offerings
                         title="Product Innovation"
                         desccription="Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
@@ -76,7 +76,7 @@ const Main = () =>{
                             offerringProduct.map((item,i)=>(        
                                 <Process 
                                     key={i} 
-                                    section="product Innovation"
+                                    section="product innovation"
                                     title={item.title}
                                     description={item.description}
                                 />       
@@ -84,9 +84,9 @@ const Main = () =>{
                         }
                     </div>  
                 </div>
-                <div id="design" className="flex flex-col gap-8 md:pt-24"> 
+                <div id="experince-design" className="flex flex-col gap-8 md:pt-24"> 
                     <Offerings
-                        title="Digital Design"
+                        title="Experience Design"
                         desccription="Yumelabs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems."
                         image={DigitalBg.src}
                         overlay="red"
@@ -97,7 +97,7 @@ const Main = () =>{
                             offerringDigital.map((item,i)=>(        
                                 <Process 
                                     key={i} 
-                                    section="product Innovation"
+                                    section="experience design"
                                     title={item.title}
                                     description={item.description}
                                 />       

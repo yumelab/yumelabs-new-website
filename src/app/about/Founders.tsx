@@ -3,7 +3,7 @@ import {FoundersList} from '@/data/founders'
 import Founder from "./Founder"
 
 
-import Pritam from "@/assets/founders/pritam.jpg"
+import Pritam from "@/assets/founders/pritam.png"
 import Abhinav from "@/assets/founders/abhinav.jpg"
 import Nabarun from "@/assets/founders/nabarun.jpg"
 

@@ -11,7 +11,7 @@ const Approach = () =>{
     return(
         <section className="flex flex-col gap-16 md:py-32 relative">
             <div className="absolute top-0 left-1/2 w-screen h-full bg-gray-50 -translate-x-1/2 -z-10"></div>
-            <h2 className='text-4xl leading-tight font-medium'>Our <br /> Approach</h2>
+            <h2 className='text-4xl leading-tight font-medium text-black'>Our <br /> Approach</h2>
             <div className="flex gap-16">
                 {
                     Methods.map((item,i)=>(

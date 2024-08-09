@@ -18,11 +18,11 @@ const Method = (props:Props) =>{
                     height={200} 
                     src={image}/>
             </div>
-            <h2 className="text-2xl font-medium">{title}</h2>
+            <h2 className="text-2xl font-medium text-black">{title}</h2>
             <ul className="flex flex-col gap-2">
                 {
                    process.map((item,i)=>(
-                    <li key={i}>{item}</li>
+                    <li key={i} className="text-black">{item}</li>
                    ))
                 }
             </ul>

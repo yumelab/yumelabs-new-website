@@ -17,7 +17,7 @@ const Main = () => {
   return (
     <section className="flex gap-4 md:flex-row flex-col md:py-32 min-h-fit">
       <div className="md:w-1/3 bg-gray-100 p-9 rounded-lg flex flex-col md:gap-24 gap-16">
-        <div className="flex flex-col md:gap-8 gap-4">
+        <div className="flex flex-col md:gap-8 gap-4 text-black">
             <h2 className="md:text-4xl text-2xl font-medium">
             Innovation is the New Marketing.
             </h2>
