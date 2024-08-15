@@ -12,10 +12,10 @@ const Project = (props:Props) =>{
     const  {tags,title,description,img} = props
     return(
         <div className="flex flex-col gap-4 pb-24">
-            <div className="w-full overflow-hidden aspect-square">
+            <div className="w-full overflow-hidden aspect-square rounded-md">
                 <Image
                     alt="project"
-                    className="object-cover w-full h-full transform transition duration-500 hover:scale-125 rounded-md"
+                    className="object-cover w-full h-full transform transition duration-500 hover:scale-125"
                     width={400}
                     height={400} 
                     src={img}/>

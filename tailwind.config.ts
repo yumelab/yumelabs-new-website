@@ -27,7 +27,7 @@ const config = {
           to: { transform: 'translateX(-100%)' },
         }
       }  
-    },
+    }
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config

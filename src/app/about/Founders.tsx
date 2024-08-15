@@ -12,7 +12,7 @@ const Founders = () =>{
     return(
         <section className="flex flex-col gap-16 md:py-32 py-16">
             <Section
-                subtitle="Founders"
+                subtitle="Our Team"
                 title="Our Founders are passionate about creating a better world through technology and innovation."
             />
             <div className="grid md:grid-cols-3 gap-16">

@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Image from 'next/image'
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Founders from "./Founders";
 // import Partners from "./Parteners";
+import Hero from './Hero';
+import YumeEdge from "./YumeEdge";
+import OurValues from "./OurValues";
+import Founders from "./Founders";
 import Workplace from "./Workplace";
 
 import AboutBackground from '@/assets/bg-about.jpg'
-import Hero from './Hero';
 
 export const metadata: Metadata = {
     title: "About Us",
@@ -18,16 +20,16 @@ const About = () =>{
     return(
         <main className="container md:max-w-screen-xl mx-auto px-8 md:px-0 flex flex-col">
             <Hero/>
-            <section className="h-screen relative">
-                <div className="absolute top-0 left-1/2 w-screen h-full -translate-x-1/2 -z-10">
-                    <Image
-                        alt="contact-us"
-                        className="object-cover w-full h-full aspect-auto"
-                        width={1280}
-                        height={800} 
-                        src={AboutBackground}/>
-                </div>
+            <section className="h-[38rem] shadow-sm">
+                <Image
+                    alt="contact-us"
+                    className="object-cover w-full h-full rounded-lg"
+                    width={1280}
+                    height={800} 
+                    src={AboutBackground}/>
             </section>
+            <YumeEdge/>
+            <OurValues/>
             <Founders/>
             {/* <Partners/> */}
             <Workplace/>
