@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 // import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'; 
 
 import Offerings from "./offerings"
-import {ProjectsList} from "@/data/projects";
-import Project from '@/components/Project' 
+import {ProjectsList} from "@/data/projects"; 
 
 // import GetInTouch from '@/components/GetInTouch'
 import Footer from "@/components/Footer";
@@ -24,6 +23,7 @@ type Content = {
 import GoodFlows from '@/assets/work/good-flows.webp'
 import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
 import DoItZero from '@/assets/work/do-it-zero.webp'
+import ProjectSmall from "@/components/ProjectSmall";
 
 export const metadata: Metadata = {
     title: "Our Services",
@@ -41,11 +41,11 @@ const ServicesHome = () =>{
             <Approach/>
             <section className='flex flex-col gap-16 md:py-32'>
                 <h2 className='text-4xl leading-tight font-medium'>Selected <br /> Projects</h2>
-                <div className='flex gap-2 overflow-x-hidden'>
+                <div className='flex flex-col gap-2 overflow-x-hidden'>
                     {
                         ProjectsList.filter((item,i) => i>3 ).map((project:Content,i)=>(
-                            <div key={i} className='w-1/3'>
-                                <Project 
+                            <div key={i} className='md:w-1/3'>
+                                <ProjectSmall 
                                     title={project.title}
                                     description={project.description}
                                     tags={project.tags}

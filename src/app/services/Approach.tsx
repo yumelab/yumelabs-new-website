@@ -10,13 +10,13 @@ const Approach = () =>{
         Innovate,Implement,Improve
     ]
     return(
-        <section className="flex flex-col gap-16 md:py-32 relative">
+        <section className="flex flex-col gap-16 md:py-32 py-24 relative">
             <div className="absolute top-0 left-1/2 w-screen h-full bg-gray-50 -translate-x-1/2 -z-10"></div>
             <Section
             title="Discover how we strategically innovate, collaborating with you to shape your brand's future."
             subtitle='our approach'
             />
-            <div className="flex gap-16">
+            <div className="flex md:flex-row flex-col md:gap-16 gap-4">
                 {
                     Methods.map((item,i)=>(
                         <Method

@@ -20,7 +20,7 @@ const Project = (props:Props) =>{
                     height={400} 
                     src={img}/>
             </div>
-            <div className="flex gap-3"> 
+            <div className="flex flex-nowrap overflow-hidden overflow-x-scroll gap-3"> 
                 {
                     tags.map((tag,i)=>(
                         <Tag label={tag} key={i}/>

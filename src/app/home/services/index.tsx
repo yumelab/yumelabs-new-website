@@ -29,28 +29,30 @@ const Main = () => {
   const cardsContainerRef = useRef<HTMLDivElement>(null)
 
   useGSAP(() => {   
-      const amountToScroll = (cardsRef.current?.offsetWidth ?? 0 - window.innerWidth) + window.innerWidth/6
+      const amountToScroll = (cardsRef.current?.offsetWidth ?? 0 - window.innerWidth) + window.innerWidth/2
       const cards = gsap.utils.toArray(cardsRef.current?.children ?? [])  // added null array to set undefined 
-
-      gsap.to(
-        cards, 
-          {
-            x: -amountToScroll,
-            ease: "Power4.easeOut", 
-            scrollTrigger: {
-              trigger: cardsContainerRef.current,
-              start: "center center",   
-              end:"+="+amountToScroll,
-              pin:true, 
-              pinSpacing:true,
-              scrub: 0.1, // Smooth scrolling animation
-              toggleActions: "play none none reverse", 
-            }, 
-            onStart: () => {
-              // ScrollTrigger.refresh();
-            }
-          },
-      );
+      // const isMobile = window.innerWidth <= 768;
+      // if (!isMobile) { 
+        gsap.to(
+          cards, 
+            {
+              x: -amountToScroll,
+              ease: "Power4.easeOut", 
+              scrollTrigger: {
+                trigger: cardsContainerRef.current,
+                start: "center center",   
+                end:"+="+amountToScroll,
+                pin:true, 
+                pinSpacing:true,
+                scrub: 0.1, // Smooth scrolling animation
+                toggleActions: "play none none reverse", 
+              }, 
+              onStart: () => {
+                // ScrollTrigger.refresh();
+              }
+            },
+        );
+    // } 
  
   },{scope: cardsContainerRef });
  
@@ -62,7 +64,7 @@ const Main = () => {
         subtitle="our services"
         title="High-potential global brands trust Yume Labs for better customer advocacy, stronger investor trust, and higher media love."
       />
-      <div ref={cardsRef}  className="flex flex-nowrap item-center space-x-10 ">  
+      <div ref={cardsRef}  className="flex flex-nowrap item-center space-x-10">  
               {
                   ServicesList.map((item,i)=>(
                     <Service 

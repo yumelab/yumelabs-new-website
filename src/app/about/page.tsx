@@ -10,6 +10,7 @@ import Founders from "./Founders";
 import Workplace from "./Workplace";
 
 import AboutBackground from '@/assets/bg-about.jpg'
+import CompanyInfo from "./CompanyInfo";
 
 export const metadata: Metadata = {
     title: "About Us",
@@ -20,7 +21,8 @@ const About = () =>{
     return(
         <main className="container md:max-w-screen-xl mx-auto px-8 md:px-0 flex flex-col">
             <Hero/>
-            <section className="h-[38rem] shadow-sm">
+            <CompanyInfo/>
+            <section className="md:h-[38rem] aspect-square md:aspect-auto shadow-sm">
                 <Image
                     alt="contact-us"
                     className="object-cover w-full h-full rounded-lg"

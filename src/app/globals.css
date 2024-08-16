@@ -20,6 +20,13 @@ html {
   scroll-behavior: smooth;
 }
 
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   color: rgb(var(--foreground-rgb)); 
   overflow-x: hidden;

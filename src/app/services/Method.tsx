@@ -9,7 +9,7 @@ interface Props{
 const Method = (props:Props) =>{
     const {title, process,image} = props
     return (
-        <div className="flex flex-col gap-8 flex-1 py-16 px-8 relative overflow-hidden group outline outline-1 outline-gray-300 hover:outline-gray-400">
+        <div className="flex flex-col gap-4 md:gap-8 flex-1 md:py-16 md:px-8 p-8 relative overflow-hidden group outline outline-1 outline-gray-200 hover:outline-gray-200 rounded-lg">
             <div className="absolute bottom-0 right-0 -z-10 w-1/2">
                 <Image
                     alt="project"
@@ -18,11 +18,11 @@ const Method = (props:Props) =>{
                     height={200} 
                     src={image}/>
             </div>
-            <h2 className="text-2xl font-medium text-black">{title}</h2>
+            <h2 className="md:text-2xl text-lg font-medium text-black">{title}</h2>
             <ul className="flex flex-col gap-2">
                 {
                    process.map((item,i)=>(
-                    <li key={i} className="text-black">{item}</li>
+                    <li key={i} className="text-black text-xs md:text-base">{item}</li>
                    ))
                 }
             </ul>

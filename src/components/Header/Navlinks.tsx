@@ -5,7 +5,12 @@ import Button from '@/components/Button';
 
 const NavLinks = () =>{   
     return(
-        <div className="flex gap-16 items-center">
+        <div className="flex flex-col gap-8 md:flex-row md:gap-16 md:items-center">
+            <Link
+                className='w-full h-full whitespace-nowrap text-slate-500 text-sm md:hidden'
+                href={AppRoutes.HOME_PAGE}>
+                Home
+            </Link> 
             <Link
                 className='w-full h-full whitespace-nowrap text-slate-500 text-sm'
                 href={AppRoutes.OUR_WORK}>
