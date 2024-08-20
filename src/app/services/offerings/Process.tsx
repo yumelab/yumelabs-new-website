@@ -18,7 +18,7 @@ const Process = (props:ComponentProps) =>{
                 alt={title} /> */}
             {/* <span className="text-gray-400 text-xs">{section}</span> */}
             <h4 className="font-medium">{title}</h4>
-            <p className="text-gray-400 text-sm">{description}</p>
+            <p className="text-gray-400 md:text-sm text-xs">{description}</p>
         </div>
     )
 }

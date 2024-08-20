@@ -26,22 +26,24 @@ const Main = () =>{
         setActive(index);
     };
 
+    const menuStyle = "flex-1 text-xs whitespace-break-spaces leading-tighter md:whitespace-nowrap md:text-2xl md:leading-none cursor-pointer  py-4 md:py-0"
+
     return ( 
         <section className="grid md:grid-cols-5 grid-cols-1 gap-8 md:-mt-16 pb-64 align-items:flex-start">
-            <div className="col-span-1 flex md:flex-col gap-4 h-fit sticky top-24"> 
+            <div className="col-span-1 flex md:flex-col gap-2 md:gap-4 h-fit sticky top-24 justify-between"> 
                 {
                     FocusList.map((item,i)=>(
                         <Link
                             key={i}
                             onClick={() => handleClick(i)}
-                            className={`cursor-pointer md:text-2xl py-4 md:py-0 ${active === i ? 'text-gray-700' : 'text-gray-300'} `}
-                            href={item.route}>
-                            <span className='whitespace-break-spaces md:whitespace-nowrap'>{item.title}</span>
+                            className={`${menuStyle} ${active === i ? 'text-gray-700' : 'text-gray-300'} `}
+                            href={item.route}> 
+                            {item.title}
                         </Link>
                     ))
                 } 
             </div>
-            <div className="md:col-start-3 md:col-span-3 flex flex-col md:gap-24"> 
+            <div className="md:col-start-3 md:col-span-3 flex flex-col md:gap-24 gap-16"> 
                 <div id="ai-experiences" className="flex flex-col gap-8 md:pt-24"> 
                     <Offerings
                         title={FocusList[0].title}
@@ -50,7 +52,7 @@ const Main = () =>{
                         overlay="yellow"
                         opacity="80"
                     />
-                    <div className="grid md:grid-cols-2 gap-16">
+                    <div className="grid md:grid-cols-2 md:gap-16 gap-8">
                         {
                             offerringAIExperiences.map((item,i)=>(        
                                 <Process 

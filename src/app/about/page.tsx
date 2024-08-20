@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Hero from './Hero';
 import YumeEdge from "./YumeEdge";
 import OurValues from "./OurValues";
-import Founders from "./Founders";
+import Founders from "./Founders/Founders";
 import Workplace from "./Workplace";
 
 import AboutBackground from '@/assets/bg-about.jpg'
