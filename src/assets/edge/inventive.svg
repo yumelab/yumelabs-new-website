@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="Group_39450" data-name="Group 39450" transform="translate(-704 -1744)">
+    <g id="Group_39446" data-name="Group 39446" transform="translate(320)">
+      <rect id="Rectangle_5447" data-name="Rectangle 5447" width="56" height="56" transform="translate(384 1744)" fill="none"/>
+    </g>
+    <g id="Group_39448" data-name="Group 39448" transform="translate(-458.207 7.431)">
+      <path id="Icon_material-lightbulb-outline" data-name="Icon material-lightbulb-outline" d="M14.522,36.355a1.761,1.761,0,0,0,1.756,1.756H23.3a1.761,1.761,0,0,0,1.756-1.756V34.6H14.522ZM19.789,3a12.283,12.283,0,0,0-7.022,22.365v3.967a1.761,1.761,0,0,0,1.756,1.756H25.055a1.761,1.761,0,0,0,1.756-1.756V25.365A12.283,12.283,0,0,0,19.789,3Zm5,19.486L23.3,23.539v4.038H16.278V23.539l-1.492-1.053a8.778,8.778,0,1,1,10.006,0Z" transform="translate(1170.5 1749)"/>
+      <path id="Path_56482" data-name="Path 56482" d="M-14381.462,6165v6.988" transform="translate(15571.75 -4423.431)" fill="none" stroke="#000" stroke-width="3.6"/>
+      <path id="Path_56483" data-name="Path 56483" d="M-14381.462,6165v6.988" transform="translate(4103.201 -13619.695) rotate(-56)" fill="none" stroke="#000" stroke-width="3.6"/>
+      <path id="Path_56484" data-name="Path 56484" d="M0,6.988V0" transform="translate(1202.206 1754.408) rotate(-124)" fill="none" stroke="#000" stroke-width="3.6"/>
+    </g>
+  </g>
+</svg>
