@@ -15,10 +15,11 @@ interface Props{
     quote:string;
     description:string;
     social:{ [key: string]: string };
+    meeting:string
 }
 
 const Details = (props:Props) =>{
-    const {name,role,quote,description, social} = props
+    const {name,role,quote,description, social,meeting} = props
 
     const teamRef = useRef<HTMLDivElement>(null)
     const quoteRef = useRef<HTMLHeadingElement>(null)
@@ -30,15 +31,15 @@ const Details = (props:Props) =>{
         tl.fromTo(
             teamRef.current,
             { xPercent: -100, opacity: 0 },
-            { xPercent: 0, opacity: 1, duration: 0.5, ease: 'back.out' },
+            { xPercent: 0, opacity: 1, duration: 0.1, ease: 'back.out' },
         ).fromTo(
             quoteRef.current,
             { xPercent: -100, opacity: 0 },
-            { xPercent: 0, opacity: 1, duration: 0.25, ease: 'back.out' },
+            { xPercent: 0, opacity: 1, duration: 0.3, ease: 'back.out' },
         ).fromTo(
             descriptionRef.current,
             { xPercent: -100, opacity: 0 },
-            { xPercent: 0, opacity: 1, duration: 0.25, ease: 'back.out' },
+            { xPercent: 0, opacity: 1, duration: 0.5, ease: 'back.out' },
         )
     },[name,quote,description])
 
@@ -54,16 +55,21 @@ const Details = (props:Props) =>{
                 <h4 className="text-sm font-semibold">{name}</h4>
                 <p className="text-sm text-gray-400">{role}</p>
             </div>
-            <h3 className="text-lg leading-tight italic text-gray-500" ref={quoteRef}>{quote}</h3>
+            <h3 className="text-sm md:text-lg leading-tight italic text-gray-500" ref={quoteRef}>{quote}</h3>
             <p className="text-xs text-gray-600 leading-normal" ref={descriptionRef}>{description}</p>
-            <div className="flex gap-8 items-center justify-end">
-                <span className="text-sm font-medium">Talk to Nabarun</span>
-                <Button
-                    size="xs"
-                    variant="text"
-                    style="solid"
-                    label="Book Meeting"
-                    type="button"/>
+            <div className="flex flex-col md:flex-row gap-8 items-center justify-end">
+                <span className="text-sm font-medium">Talk to {name}</span> 
+                <Link 
+                    target="_blank"
+                    href={meeting || ''}>
+                   <Button
+                        size="xs"
+                        variant="text"
+                        style="solid"
+                        label="Book Meeting"
+                        type="button"
+                        />   
+                </Link> 
             </div>
         </div>
     )

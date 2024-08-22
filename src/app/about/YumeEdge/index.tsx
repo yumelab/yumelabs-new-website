@@ -10,8 +10,8 @@ const Main = () =>{
   const titleB = '"Yume Labs Edge"'
   const Icons = [Invested,Inventive,Integrated]
  return (
-    <section className="flex flex-col md:gap-16 max-h-fit  text-white py-32">
-        <h2 className="md:text-4xl text-2xl font-medium leading-tight text-black w-2/3">{titleA} <br />{titleB}</h2>
+    <section className="flex flex-col md:gap-16 gap-8 max-h-fit  text-white md:py-32 py-24">
+        <h2 className="md:text-4xl text-2xl font-medium leading-tight text-black md:w-2/3">{titleA} <br />{titleB}</h2>
         <div className="grid md:grid-cols-3 md:gap-32 gap-8">
             {
                 OurEdge.map((item,i)=>(

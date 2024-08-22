@@ -38,6 +38,17 @@ body {
   }
 }
 
+.ai-grid{
+  background-image: linear-gradient(rgba(255,255,255,0.3) .1em, transparent .1em), linear-gradient(90deg, rgba(255,255,255,0.3) .1em, transparent .1em);
+  background-size: 1.2em 1.2em;
+}
+
+.noise {
+  /* ... */
+  background: 
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
 
 .overlay{
   border-image:fill 1 linear-gradient(hsla(0, 0%, 0%, 0.265) , hsla(0, 0%, 0%, 0.081));

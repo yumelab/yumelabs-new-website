@@ -8,7 +8,7 @@ import OurValues from "./OurValues";
 import Founders from "./Team";
 // import Workplace from "./Workplace";
 
-import AboutBackground from '@/assets/bg-about.jpg'
+import AboutBackground from '@/assets/bg-about.webp'
 import CompanyInfo from "./CompanyInfo";
 import Engage from "./Engage";
 

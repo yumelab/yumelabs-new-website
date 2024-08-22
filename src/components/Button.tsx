@@ -1,7 +1,5 @@
 import * as Icon from '@geist-ui/icons';
 
-
-
 interface Props{
     variant:'icon' | 'text';
     style:'outline'|'solid';
@@ -23,7 +21,7 @@ const Button = (props:Props) =>{
     const IconComponent = (iconName!=undefined) ? Icon[iconName] : Icon.ArrowDownRight;
     return ( 
         <button 
-            className={`${base} ${padding} text-${size} ${style === 'solid' ? solidStyle : outlineStyle} `} 
+            className={`group ${base} ${padding} text-${size} ${style === 'solid' ? solidStyle : outlineStyle} `} 
             type={type ? "submit" : "button"} onClick={onClick}>
             {(variant=== 'icon') ?  <IconComponent size={24}/>  : label}  {texticon? <Icon.ArrowRight size={24}/> : ''}
         </button> 

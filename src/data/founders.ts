@@ -9,7 +9,8 @@ export const FoundersList = [
                 "instagram":"https://www.instagram.com/kaariger/",
                 "twitter":"",
                 "github":"https://github.com/black",
-            }
+            },
+            "meeting":"https://calendar.app.google/9sUkVaAPo1V9Uer47"
     },
     {
         "name":"Abhinav Kumar",
@@ -21,7 +22,8 @@ export const FoundersList = [
                 "instagram":"https://www.instagram.com/kaariger/",
                 "twitter":"",
                 "github":"https://github.com/black",
-            }
+            },
+            "meeting":"https://calendar.app.google/9sUkVaAPo1V9Uer47"
     },
     {
         "name":"Nabanrun Bhowmick",
@@ -33,6 +35,7 @@ export const FoundersList = [
                 "instagram":"https://www.instagram.com/kaariger/",
                 "twitter":"",
                 "github":"https://github.com/black",
-            }
+            },
+            "meeting":"https://calendar.app.google/HHKkNocceL7ixNhLA"
     }
 ]

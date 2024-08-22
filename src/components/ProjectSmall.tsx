@@ -11,7 +11,7 @@ interface Props{
 const ProjectSmall = (props:Props) =>{
     const  {tags,title,description,img} = props
     return(
-        <div className="flex flex-col gap-4 pb-24">
+        <div className="flex flex-col gap-4 md:pb-24 pb-12">
             <div className="w-full overflow-hidden h-96 rounded-md">
                 <Image
                     alt="project"

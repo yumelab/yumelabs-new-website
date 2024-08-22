@@ -41,7 +41,7 @@ const ServicesHome = () =>{
             <Approach/>
             <section className='flex flex-col gap-16 md:py-32'>
                 <h2 className='text-4xl leading-tight font-medium'>Selected <br /> Projects</h2>
-                <div className='flex flex-col gap-2 overflow-x-hidden'>
+                <div className='flex md:flex-row flex-col gap-2 overflow-x-hidden'>
                     {
                         ProjectsList.filter((item,i) => i>3 ).map((project:Content,i)=>(
                             <div key={i} className='md:w-1/3'>

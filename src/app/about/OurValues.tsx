@@ -1,7 +1,9 @@
 import Image from "next/image"  
 
 import contactBackground from '@/assets/contact-us-bg.webp'
-import Excellence from '@/assets/excellence.svg'
+import Excellence from '@/assets/values/excellence.svg'
+import CoCreation from '@/assets/values/co-creation.svg'
+import Simplification from '@/assets/values/simplification.svg'
 
 const OurValues = () => {
 
@@ -30,10 +32,26 @@ const OurValues = () => {
                     <p className="text-black text-sm ">Be at the edge of what&#39;s &quot;possible&quot; through continuous lifelong learning</p>
                 </div>
                 <div className="flex flex-col gap-4 justify-end p-8 shadow-sm rounded-lg bg-gradient-to-tr from-indigo-600 to-red-300 aspect-square">
+                    <div className="h-8 w-8">
+                        <Image
+                            alt="contact-us"
+                            className="w-full aspect-square"
+                            width={200}
+                            height={200} 
+                            src={CoCreation}/>
+                    </div>
                     <h4 className="md:text-2xl text-lg font-medium text-white">Co-Creation</h4>
                     <p className="text-white opacity-40 text-sm">Create together through positivity, relationships, and accountability.</p>
                 </div>
                 <div className="flex flex-col gap-4 justify-end p-8 bg-blue-700 shadow-sm rounded-lg aspect-square">
+                    <div className="h-8 w-8">
+                        <Image
+                            alt="contact-us"
+                            className="w-full aspect-square"
+                            width={200}
+                            height={200} 
+                            src={Simplification}/>
+                    </div>
                     <h4 className="md:text-2xl text-lg font-medium text-white">Simplification</h4>
                     <p className="text-white opacity-40 text-sm">Embrace first-principles thinking to reduce non-essential complexity.</p>
                 </div>

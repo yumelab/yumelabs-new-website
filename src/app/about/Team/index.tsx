@@ -19,7 +19,7 @@ import contactBackground from '@/assets/contact-us-bg.webp'
  gsap.registerPlugin(Draggable);
 
 const Main = () =>{
-    const [headshots,setHeadShots] = useState([Pritam,Abhinav,Nabarun])
+    const [headshots,setHeadShots] = useState([Nabarun,Abhinav,Pritam])
     const [active,setActive] = useState(0) 
     const carouselRef = useRef<HTMLDivElement>(null)
 
@@ -58,10 +58,10 @@ const Main = () =>{
                 subtitle="Our Team"
                 title=""
             />
-            <div className="flex gap-16">
+            <div className="flex flex-col md:flex-row md:gap-16 gap-8">
                 <div className="flex-1 flex flex-col items-end gap-4 overflow-hidden">
-                    <div className="flex gap-2 items-end flex-1" ref={carouselRef}>
-                        <div className="flex-1 rounded-lg">
+                    <div className="flex gap-2 h-72 items-end flex-1" ref={carouselRef}>
+                        <div className="hidden md:block md:flex-1 rounded-lg">
                             <Image
                                 className="object-cover w-full h-full bg-gray-100 rounded-lg"
                                 src={headshots[0]}
@@ -70,7 +70,7 @@ const Main = () =>{
                                 height={400}
                             />
                         </div>
-                        <div className="flex-1 rounded-lg">
+                        <div className="hidden md:block md:flex-1 rounded-lg">
                             <Image
                                 className="object-cover w-full h-full bg-gray-100 rounded-lg"
                                 src={headshots[1]}
@@ -82,39 +82,18 @@ const Main = () =>{
                         <div className="flex-1 rounded-lg relative ">
                                 <Image
                                     alt="contact-us"
-                                    className="object-cover w-full h-full absolute top-0 left-1/2 w-full h-full -translate-x-1/2"
+                                    className="object-cover w-full h-full absolute top-0 left-1/2 -translate-x-1/2 -z-10"
                                     width={400}
                                     height={400} 
                                     src={contactBackground}/>
                             <Image
-                                className="object-cover w-full h-full bg-gray-100 rounded-lg"
+                                className="object-cover w-full h-full rounded-lg"
                                 src={headshots[2]}
                                 alt="Founder"
                                 width={400}
                                 height={400}
                             />
-                        </div>
-
-                        {/* <div className="w-[60%] flex gap-2"> 
-                            <div className="flex-1 h-2/3 rounded-lg">
-                                <Image
-                                    className="object-cover w-full h-full bg-gray-100 rounded-lg"
-                                    src={headshots[0]}
-                                    alt="Founder"
-                                    width={400}
-                                    height={400}
-                                />
-                            </div>
-                            <div className="flex-1 h-2/3 rounded-lg">
-                                <Image
-                                    className="object-cover w-full h-full bg-gray-100 rounded-lg"
-                                    src={headshots[1]}
-                                    alt="Founder"
-                                    width={400}
-                                    height={400}
-                                />
-                            </div>
-                        </div>  */}
+                        </div> 
                     </div>
                     <div className="flex gap-8 md:pl-24 pl-12"> 
                         <Button 
@@ -133,13 +112,14 @@ const Main = () =>{
                             onClick={nextSlide}/>  
                     </div>
                 </div>
-                <div className="w-1/3">
+                <div className="md:w-1/3">
                      <Details
                         name={FoundersList[active].name}
                         role={FoundersList[active].role}
                         quote={FoundersList[active].quote}
                         description={FoundersList[active].description}
                         social={FoundersList[active].social}
+                        meeting={FoundersList[active].meeting}
                         /> 
                 </div> 
             </div>

@@ -3,25 +3,28 @@ import Image from "next/image";
 interface Props{
     title:string;
     image:string;
-    alt:string;
+    background:string;  
+    alt:string; 
 }
 
 const Focus = (props:Props) =>{
-    const {title,image,alt} = props
+    const {title,image,alt,background} = props 
     return(
-        <div className="flex-1 min-h-fit bg-gray-100 px-8 py-16 rounded-lg overflow-hidden relative">
-            <div className="absolute h-48 w-auto -right-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+        <div className="flex-1 min-h-fit p-8 rounded-lg overflow-hidden relative aspect-square bg-gray-100"> 
+            <div className="absolute -bottom-1/2 left-1/2 -translate-x-1/2 w-full h-full transform transition duration-500 hover:scale-110 hover:-translate-y-1/4"> 
             <Image 
-                className="object-contain w-full h-full transform transition duration-500 hover:scale-125" 
-                width={300} 
-                height={300}
+                className="object-contain w-full h-fit" 
+                width={500} 
+                height={500}
                 src={image}
                 alt={alt} 
                 />
             </div> 
-            <h4 className="md:absolute md:left-0 md:right-0 md:bottom-8 text-sm text-gray-400 md:text-center w-full whitespace-break-spaces md:whitespace-nowrap">{title}</h4>
+            <h4 className="text-xl whitespace-break-spaces z-10 font-medium">{title}</h4> 
         </div>
     )
 }
 
 export default Focus;
+
+// transform transition duration-500 hover:scale-125
