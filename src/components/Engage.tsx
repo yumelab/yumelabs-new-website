@@ -2,7 +2,7 @@ import Image from "next/image"
 import SendGraphic from "@/assets/sendGraphic.svg"
 const Engage = () =>{
     return(
-        <section className="flex flex-col gap-40 md:gap-0 md:flex-row justify-between md:h-[50vh] h-fit md:p-16 p-8 relative bg-black rounded-lg my-16">
+        <section className="flex flex-col gap-40 md:gap-0 md:flex-row justify-between md:h-[450px] h-fit md:p-16 p-8 relative bg-black rounded-lg my-16">
             <div className="absolute top-0 left-1/2 md:w-[105%] w-screen h-full -translate-x-1/2 z-10">
                 <Image
                     alt="contact-us"

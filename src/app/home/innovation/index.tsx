@@ -18,7 +18,7 @@ const Main = () => {
   const FocusImages = [AIGrid,ProductInnovation,ExperienceDesign]
   return (
     <section className="flex flex-col gap-16 md:py-32 min-h-fit"> 
-      <div className="grid grid-cols-3 gap-8"> 
+      <div className="grid md:grid-cols-3 gap-8"> 
         {
             FocusList.filter((item,i)=>i>0).map((foc,i)=>(
               <Focus

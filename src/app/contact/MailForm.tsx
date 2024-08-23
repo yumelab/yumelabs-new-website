@@ -1,16 +1,14 @@
 
 import { FormEvent } from "react"; 
 import { Terms } from '@/data/terms';
-import Button from "./Button";
+import Button from "@/components/Button";
 
 const MailForm = () =>{
     const handleSubmit = async (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault();
     }
 
-    return(
-        <>
-            <h2 className="text-4xl">How can we help?</h2>
+    return( 
             <form className="flex flex-col gap-4">
                 <input
                     type='text'
@@ -61,8 +59,7 @@ const MailForm = () =>{
                     type="submit"
                     /> 
                 </div>  
-            </form>
-        </>
+            </form> 
     )
 }
 

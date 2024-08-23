@@ -26,10 +26,10 @@ const Main = () =>{
         setActive(index);
     };
 
-    const menuStyle = "flex-1 text-xs whitespace-break-spaces leading-tighter md:whitespace-nowrap md:text-2xl md:leading-none cursor-pointer  py-4 md:py-0"
+    const menuStyle = "text-xs whitespace-break-spaces leading-tighter md:whitespace-nowrap md:text-2xl md:leading-none cursor-pointer py-4 md:py-0"
 
     return ( 
-        <section className="grid md:grid-cols-5 grid-cols-1 gap-8 md:-mt-16 pb-64 align-items:flex-start">
+        <section className="grid md:grid-cols-5 grid-cols-1 gap-8 md:py-32 py-24">
             <div className="col-span-1 flex md:flex-col gap-2 md:gap-4 h-fit sticky top-24 justify-between"> 
                 {
                     FocusList.map((item,i)=>(
@@ -44,7 +44,7 @@ const Main = () =>{
                 } 
             </div>
             <div className="md:col-start-3 md:col-span-3 flex flex-col md:gap-24 gap-16"> 
-                <div id="ai-experiences" className="flex flex-col gap-8 md:pt-24"> 
+                <div id="ai-experiences" className="flex flex-col gap-8 scroll-my-24"> 
                     <Offerings
                         title={FocusList[0].title}
                         desccription={FocusList[0].description}
@@ -65,7 +65,7 @@ const Main = () =>{
                         }
                     </div>  
                 </div>
-                <div id="product-innovation" className="flex flex-col gap-8 md:pt-24">
+                <div id="product-innovation" className="flex flex-col gap-8 scroll-my-24">
                     <Offerings
                         title={FocusList[1].title}
                         desccription={FocusList[1].description}
@@ -73,7 +73,7 @@ const Main = () =>{
                         overlay="blue"
                         opacity="50"
                     />
-                    <div className="grid md:grid-cols-2 gap-16">
+                    <div className="grid md:grid-cols-2 md:gap-16 gap-8">
                         {
                             offerringProduct.map((item,i)=>(        
                                 <Process 
@@ -86,7 +86,7 @@ const Main = () =>{
                         }
                     </div>  
                 </div>
-                <div id="experince-design" className="flex flex-col gap-8 md:pt-24"> 
+                <div id="experince-design" className="flex flex-col gap-8 scroll-my-24"> 
                     <Offerings
                         title={FocusList[2].title}
                         desccription={FocusList[2].description}
@@ -94,7 +94,7 @@ const Main = () =>{
                         overlay="red"
                         opacity="30"
                     />
-                    <div className="grid md:grid-cols-2 gap-16">
+                    <div className="grid md:grid-cols-2 md:gap-16 gap-8">
                         {
                             offerringDigital.map((item,i)=>(        
                                 <Process 

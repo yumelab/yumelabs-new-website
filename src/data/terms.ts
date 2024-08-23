@@ -1,5 +1,5 @@
 export const Terms = {
     form: {
-        terms: 'I agree to Yume Labs collecting and processing my personal data to allow me to receive information on their services.',
+        terms: 'By submitting the above information, I consent to allow Yume Labs to process my personal information to provide me with the service and content requested. Please review our Privacy Policy for more information.',
     },
 };

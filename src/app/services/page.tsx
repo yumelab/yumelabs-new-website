@@ -8,7 +8,7 @@ import {ProjectsList} from "@/data/projects";
 // import GetInTouch from '@/components/GetInTouch'
 import Footer from "@/components/Footer";
 
-import Hero from "../home/Hero" 
+import Hero from "./Hero" 
 import Approach from './Approach';
 import Contact from '@/components/Contact';
  
@@ -23,7 +23,7 @@ type Content = {
 import GoodFlows from '@/assets/work/good-flows.webp'
 import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
 import DoItZero from '@/assets/work/do-it-zero.webp'
-import ProjectSmall from "@/components/ProjectSmall";
+import Project from "@/components/Project";
 
 export const metadata: Metadata = {
     title: "Our Services",
@@ -39,13 +39,13 @@ const ServicesHome = () =>{
             <Hero/>
             <Offerings/>
             <Approach/>
-            <section className='flex flex-col gap-16 md:py-32'>
+            <section className='flex flex-col gap-16 md:py-32 py-24'>
                 <h2 className='text-4xl leading-tight font-medium'>Selected <br /> Projects</h2>
                 <div className='flex md:flex-row flex-col gap-2 overflow-x-hidden'>
                     {
                         ProjectsList.filter((item,i) => i>3 ).map((project:Content,i)=>(
                             <div key={i} className='md:w-1/3'>
-                                <ProjectSmall 
+                                <Project
                                     title={project.title}
                                     description={project.description}
                                     tags={project.tags}

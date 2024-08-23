@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import Image from 'next/image' 
-import Footer from "@/components/Footer";
 // import Partners from "./Parteners";
+// import Workplace from "./Workplace";
+
 import Hero from './Hero';
 import YumeEdge from "./YumeEdge";
 import OurValues from "./OurValues";
 import Founders from "./Team";
-// import Workplace from "./Workplace";
+import CompanyInfo from "./CompanyInfo";
+import Engage from "@/components/Engage";
+import Footer from "@/components/Footer";
 
 import AboutBackground from '@/assets/bg-about.webp'
-import CompanyInfo from "./CompanyInfo";
-import Engage from "./Engage";
 
 export const metadata: Metadata = {
     title: "About Us",
@@ -29,7 +30,10 @@ const About = () =>{
                     height={800} 
                     src={AboutBackground}/>
             </section>
-            <YumeEdge/>
+            <YumeEdge/> 
+            <section className="h-[50vh] flex items-center justify-center">
+                <h2 className="md:text-6xl text-3xl text-center bg-gradient-to-r from-indigo-700 via-red-300 to-pink-700 inline-block text-transparent bg-clip-text">We’re on a Mission to Humanize Adoption for “Tech That Matters”.</h2>
+            </section>
             <OurValues/>
             <Founders/>
             <CompanyInfo/>

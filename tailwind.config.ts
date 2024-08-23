@@ -19,7 +19,8 @@ const config = {
     },
     extend: {
       animation: {
-        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        'infinite-scroll': 'infinite-scroll 80s linear infinite',
+        'spin-slow': 'spin 20s linear infinite',
       },
       keyframes: {
         'infinite-scroll': {
