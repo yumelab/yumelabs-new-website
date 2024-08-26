@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
 
 *{
@@ -37,5 +37,5 @@ body {
 
 
 .overlay{
-  border-image:fill 1 linear-gradient(hsla(0, 0%, 0%, 0.265) , hsla(0, 0%, 0%, 0.081));
+  border-image:fill 1 linear-gradient(hsla(0, 0%, 0%, 0.265) , hsla(0, 0%, 0%, 0.081)); 
 }

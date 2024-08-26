@@ -18,7 +18,6 @@
   ],
   "hosting": {
     "public": "out",
-    "cleanUrls": true,
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -30,13 +30,13 @@ const Main = () =>{
 
     return ( 
         <section className="grid md:grid-cols-5 grid-cols-1 gap-8 md:py-32 py-24">
-            <div className="col-span-1 flex md:flex-col gap-2 md:gap-4 h-fit sticky top-24 justify-between"> 
+            <div className="col-span-1 flex md:flex-col gap-2 md:gap-4 h-fit sticky md:top-24 top-16  justify-between md:bg-transparent md:border-0 bg-white border-b-2 z-50"> 
                 {
                     FocusList.map((item,i)=>(
                         <Link
                             key={i}
                             onClick={() => handleClick(i)}
-                            className={`${menuStyle} ${active === i ? 'text-gray-700' : 'text-gray-300'} `}
+                            className={`flex-1 whitespace-break-spaces ${menuStyle} ${active === i ? 'text-gray-700' : 'text-gray-300'} `}
                             href={item.route}> 
                             {item.title}
                         </Link>

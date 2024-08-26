@@ -46,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${Poppins_S.className} overflow-x-hidden`}   >
+      <body className={Poppins_S.className}>
         <Header/> 
           {children}
         <Metrics />
