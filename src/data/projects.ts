@@ -29,40 +29,50 @@ export const ServicesList = [
     },
 ];
 
-export const ProjectsList = [
+export const ProjectsList = [ 
     {
-        "tags":["SaaSUX","Enterprise"],
-        "title":"Maiven",
-        "description":"Low friction split panel enterprise UX for the Next in Martech SaaS platforms."
+        "tags":["conversationalai","mobileux","consumertech"],
+        "title":"Good Flows",
+        "description":"Unique swipe gestures to drive the Next in conversational mobile experience for AI."
     },
     {
-        "tags":["ux/ui","development"],
-        "title":"Zero Emission",
-        "description":"Minimal B2B SaaS experience for a pioneering Climatetech platform in commercial shipping."
-    },
+        "tags":["branding","embeddedux","securitytech"],
+        "title":"Giesecke + Devrient",
+        "description":"Experience research & innovation for the Next in Cashtech embedded application GUIs."
+    },  
+    {
+        "tags":["EcommerceUX","DesignedForBharat","consumertech"],
+        "title":"BookMyPooja",
+        "description":"Fresh Hindu religious services ecommerce experience for the Next in Spiritualtech."
+    },  
+    {
+        "tags":["MobileUX","Gamification"],
+        "title":"22Yards",
+        "description":"Custom gamification system driven mobile experience for the Next in Sportstech."
+    }, 
     {
         "tags":["ux/ui","development"],
         "title":"IEAC IIT Madras",
-        "description":"Fully configurable modular enterprise UX for the Next in Energy Management."
+        "description":"Configurable enterprise application experience for the Next in Energy Management."
     },
     {
-        "tags":["EcommerceUX","DesignedForBharat"],
-        "title":"BookMypooja",
-        "description":"Fresh Hindu religious services ecommerce experience for the Next in Spiritualtech."
-    },
-    {
-        "tags":["ConversationalUX","MobileUX"],
-        "title":"Good Flows",
-        "description":"Unique swipe gestures to drive the Next in conversational mobile UX."
-    },
+        "tags":["d2c","ecommerceux","branding"],
+        "title":"Indic Origins",
+        "description":"Luxurious visual branding and D2C ecommerce experience for the Next in Indian crafts."
+    }, 
     {
         "tags":["Branding","Gamification"],
         "title":"Do It Zero",
         "description":"Minimalist identity design system and gamification for the Next in Climatetech."
     },
     {
-        "tags":["MobileUX","Gamification"],
-        "title":"22 Yards",
-        "description":"Extensive gamification system driven UX with custom graphics for the Next in Sportstech."
+        "tags":["SaaSUX","Enterprise"],
+        "title":"Maiven",
+        "description":"Low friction split panel enterprise UX for the Next in Martech SaaS platforms."
+    }, 
+    {
+        "tags":["ux/ui","development"],
+        "title":"Approlabs",
+        "description":"Minimal B2B SaaS experience for a pioneering Climatetech platform in commercial shipping."
     }
 ]

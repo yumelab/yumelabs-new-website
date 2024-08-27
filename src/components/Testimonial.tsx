@@ -5,11 +5,10 @@ interface Props{
     name:string;
     role:string;
     company:string;
-    size:'md' | 'lg ' | 'xl' | '2xl' | '3xl' | '4xl'
 }
 
 const Testimonial = (props:Props) =>{
-    const {message, name, role, company, size} = props
+    const {message, name, role, company} = props
     return(
         <div className="flex flex-col gap-8 md:pl-24 pl-12 relative">
             <div className="absolute left-0">
@@ -20,7 +19,7 @@ const Testimonial = (props:Props) =>{
                     width={100}
                     height={100}/>
             </div>
-            <p className={`text-${size} font-extralight italic text-gray-400`}>{message}</p>
+            <p className={`text-xl font-extralight italic text-gray-400`}>{message}</p>
             <div>
                 <h4 className="text-sm font-semibold">{name}</h4>
                 <h6 className="text-sm text-gray-500">{role}</h6>

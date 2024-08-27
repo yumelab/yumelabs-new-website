@@ -33,13 +33,12 @@ const Testimonials = () =>{
                 title="Our customer brands see consistent return on design investment"/>
 
             <div className="flex flex-col md:gap-4 gap-8">
-                <div className="flex flex-nowrap md:w-1/2 md:h-48"> 
+                <div className="flex flex-nowrap md:w-2/3 md:h-64"> 
                     <Testimonial 
                         name={Reviews[activeIndex].name} 
                         message={Reviews[activeIndex].message}
                         role={Reviews[activeIndex].role}
-                        company={Reviews[activeIndex].company}
-                        size="2xl"/> 
+                        company={Reviews[activeIndex].company}/> 
                 </div>
     
                 <div className="flex gap-8 md:pl-24 pl-12"> 

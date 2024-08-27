@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 
 const ServicesHome = () =>{  
-    const Projects = [GoodFlows,DoItZero,TwentyTwoYards]
+    const CoverImages = [GoodFlows,DoItZero,TwentyTwoYards]
 
     return(
         <main className="container md:max-w-screen-xl mx-auto px-8 md:px-0 flex flex-col"> 
@@ -51,7 +51,7 @@ const ServicesHome = () =>{
                                     title={project.title}
                                     description={project.description}
                                     tags={project.tags}
-                                    img={Projects[i].src}/>
+                                    img={CoverImages[i]?.src}/>
                             </div>
                         ))
                     }

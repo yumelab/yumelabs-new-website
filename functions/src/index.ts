@@ -17,7 +17,7 @@ const transporter = nodeMailer.createTransport({
 });
 
 const sendMail = onRequest({
-  cors: [/firebase\.com$/, "yumelabs.com"],
+  cors: [/firebase\.com$/, "https://yumelabs.com"],
 }, async (req, res) => {
   // const body = JSON.parse(req.body);
   const mailOptions = {

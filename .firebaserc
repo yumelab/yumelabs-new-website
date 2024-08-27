@@ -1,5 +1,12 @@
 {
   "projects": {
     "default": "yume-labs-70d8f"
-  }
+  },
+  "targets": {},
+  "etags": {
+    "yume-labs-70d8f": {
+      "extensionInstances": {}
+    }
+  },
+  "dataconnectEmulatorConfig": {}
 }

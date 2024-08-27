@@ -34,7 +34,7 @@ const MailForm = () =>{
             terms: (e.target as any).terms.checked
         };
         
-        await fetch('http://127.0.0.1:5001/yume-staging/us-central1/sendMail',{
+        await fetch('https://default-etnurt5qda-uc.a.run.app',{
             method:'POST',
             headers: {
                 Accept: 'application/json',

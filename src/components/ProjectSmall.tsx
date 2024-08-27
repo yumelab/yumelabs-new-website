@@ -5,13 +5,14 @@ interface Props{
     tags:string[],
     title:string,
     description:string,
-    img:string
+    img:string;
+    id?:number;
 }
 
 const ProjectSmall = (props:Props) =>{
-    const  {tags,title,description,img} = props
+    const  {tags,title,description,img,id} = props
     return(
-        <div className="flex flex-col gap-4 md:pb-24 pb-12">
+        <div className="flex flex-col gap-4 md:pb-24 pb-12 break-inside-avoid"> 
             <div className="w-full overflow-hidden h-96 rounded-md">
                 <Image
                     alt="project"
