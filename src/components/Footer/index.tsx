@@ -15,37 +15,34 @@ const Footer = () =>{
                   iconlogo={false}
                   logostyle
                  />
-                 <p className="text-sm text-gray-300 font">High-potential global brands trust Yume Labs for better customer advocacy, stronger investor trust, and higher media love.</p>
+                 <p className="text-lg text-gray-300 font">Dreams Deliverd.</p>
                 </div>
                 <div className="md:col-start-3 md:col-span-1 flex flex-col gap-6">
                     <div>
-                        <span className="text-xs font-medium uppercase block">Write to Us</span>
+                        <span className="text-xs font-medium uppercase block">Email</span>
                         <Link href='mailto:discover@yumelabs.com' className="text-sm text-gray-300 font">
-                            discover@yumelabs.com
+                            pritam@yumelabs.com
                         </Link>
-                        </div>
+                    </div> 
                     <div>
-                    <span className="text-xs font-medium uppercase block">Address</span>
+                        <span className="text-xs font-medium uppercase block">Phone</span>
+                        <Link href='tel:8583035111' className="text-sm text-gray-300 font">
+                            +91 98106 75713 
+                        </Link>
+                    </div>
+                    <div> 
+                        <span className="text-xs font-medium uppercase block">Address</span>
                         <p className="text-sm text-gray-300 font">
-                        Hubnxtdoor, No.13-14, 1st floor, SV Complex,
-                        Navodaya Nagar, Kothanur Main Road,
-                        7th Phase, J.P.Nagar, Bengaluru 560078
-                        Karnataka, India
+                        HubNxtDoor, SV Complex, Kothnur Main Road, 7th Phase, J.P. Nagar, Bengaluru 560078, Karnataka, India
                         </p> 
                     </div>
-                    <div>
-                    <span className="text-xs font-medium uppercase block">Phone</span>
-                        <Link href='tel:8583035111' className="text-sm text-gray-300 font">
-                            +91 85830 35111 
-                        </Link>
-                    </div>
-                </div>
+                </div> 
                 <div className="col-span-1 flex flex-col text-sm gap-4 text-gray-300 font">
-                    <Link href={AppRoutes.OUR_WORK}>Work</Link>
+                    {/* <Link href={AppRoutes.OUR_WORK}>Work</Link> */}
                     <Link href={AppRoutes.SERVICES}>Services</Link>
-                    <Link href={AppRoutes.INSIGHTS}>Insights</Link>
+                    {/* <Link href={AppRoutes.INSIGHTS}>Insights</Link> */}
                     <Link href={AppRoutes.ABOUT_US}>About Us</Link>
-                    <Link href={AppRoutes.LABS}>Labs</Link>
+                    {/* <Link href={AppRoutes.LABS}>Labs</Link> */}
                     <Link href={AppRoutes.CONTACT_US}>Contact Us</Link>
                 </div>
             </div>

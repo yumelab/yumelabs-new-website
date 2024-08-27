@@ -29,7 +29,7 @@ const Testimonials = () =>{
     return(
         <section className="flex flex-col gap-16 md:py-32 py-16">
             <Section
-                subtitle="testimonial"
+                subtitle="testimonials"
                 title="Our customer brands see consistent return on design investment"/>
 
             <div className="flex flex-col md:gap-4 gap-8">

@@ -8,6 +8,7 @@ import Contact from "@/components/Contact";
 import Clients from "@/components/Clients";
 import Testimonials from "./home/Testimonials";
 import Insights from "./home/insights";
+import Engage from "@/components/Engage";
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
       {/* <Services /> */}
       <Testimonials/> 
       {/* <Insights/> */}
-      <Contact/>
+      {/* <Contact/> */}
+      <Engage/>
       <Footer />
     </main>
   );

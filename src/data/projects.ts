@@ -58,7 +58,7 @@ export const ProjectsList = [
     {
         "tags":["d2c","ecommerceux","branding"],
         "title":"Indic Origins",
-        "description":"Luxurious visual branding and D2C ecommerce experience for the Next in Indian crafts."
+        "description":"Luxurious visual branding and D2C ecommerce experience for the Next in Indian Crafts."
     }, 
     {
         "tags":["Branding","Gamification"],
@@ -73,6 +73,6 @@ export const ProjectsList = [
     {
         "tags":["ux/ui","development"],
         "title":"Approlabs",
-        "description":"Minimal B2B SaaS experience for a pioneering Climatetech platform in commercial shipping."
+        "description":"Modern and minimalist visual brand system for the Next in Custom Software Services."
     }
 ]

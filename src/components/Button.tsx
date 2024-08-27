@@ -1,6 +1,7 @@
 import * as Icon from '@geist-ui/icons';
 
 interface Props{
+    mode?:'dark'|'light';
     variant:'icon' | 'text';
     style:'outline'|'solid';
     size:'xs'| 'sm'|'md'|'lg'|'xl';
@@ -12,8 +13,10 @@ interface Props{
 }
 
 const Button = (props:Props) =>{
-    const {variant,style,size,label,iconName,type,texticon, onClick} = props
+    const {variant,style,size,label,iconName,type,texticon, mode, onClick} = props
 
+    const light = "bg-white text-black"
+    const dark = "bg-black text-white"
     const base = 'rounded-full max-w-fit max-w-fit flex items-center gap-4'
     const solidStyle= 'bg-black hover:bg-gray-800 text-white'
     const outlineStyle = 'border border-gray-300 hover:border-transparent hover:bg-gray-200 text-black' 

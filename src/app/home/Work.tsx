@@ -32,7 +32,7 @@ const Projects = () => {
           subtitle='our work'
           title='Simplifying the Next for Dreamers who do.'
           width="1/3"/>
-      <div className="md:columns-2 gap-4 pt-16 md:pt-0 min-h-fit">  
+      <div className="md:columns-2 gap-4 pt-16 md:pt-0">  
         {
             ProjectsList.filter((item,i)=>i<6).map((project:ProjectType,i)=>( 
               (i%2==0) ?  <Project
@@ -68,7 +68,7 @@ const Projects = () => {
         <Link 
           href={AppRoutes.SERVICES}>
             <Button
-                label="Explore Service"
+                label="Explore Services"
                 variant="text"
                 style="outline"
                 size="xl"
