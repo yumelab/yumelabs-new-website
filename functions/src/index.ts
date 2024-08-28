@@ -23,13 +23,13 @@ const sendMail = onRequest({
   const mailOptions = {
     from: process.env.SENDER_EMAIL_ID,
     to: process.env.RECEIVERS_EMAIL_IDS,
-    subject: `${req.body.firstName} from ${req.body.company} 🚀`,
-    html: `<span>Hi Yume Labs<span><br/><br/>
+    subject: `${req.body.firstName} -> ${req.body.company} 🚀`,
+    html: `<span>Hi Pritam,<span><br/><br/>
            <p>${req.body.message}</p><br/><br/>
            <p>
-           ${req.body.firstName} <br/> 
-           ${req.body.mail} <br/> 
-           ${req.body.phone}
+           ${req.body.firstName} ${req.body.lastName}<br/> 
+           ${req.body.email} / ${req.body.phone} <br/> 
+           ${req.body.company}
            </p>`,
   };
 

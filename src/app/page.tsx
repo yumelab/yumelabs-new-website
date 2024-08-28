@@ -9,12 +9,13 @@ import Clients from "@/components/Clients";
 import Testimonials from "./home/Testimonials";
 import Insights from "./home/insights";
 import Engage from "@/components/Engage";
+import ButtonF from "@/components/ButtonF";
 
 export default function Home() {
   return (
     <main className="container md:max-w-screen-xl flex flex-col mx-auto px-8">
       <Hero />
-      <Reels />
+      <Reels /> 
       <Innovation />
       <Clients/>
       <Work />

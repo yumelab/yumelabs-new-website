@@ -43,15 +43,16 @@ const ServicesHome = () =>{
                 <h2 className='md:text-4xl text-2xl leading-tight font-medium whitespace-break-spaces'>
                     Selected 
                     Projects</h2>
-                <div className='flex md:flex-row flex-col gap-2 overflow-x-hidden'>
+                <div className='flex md:flex-row flex-col gap-2'>
                     {
-                        ProjectsList.filter((item,i) => i>3 ).map((project:Content,i)=>(
+                        ProjectsList.filter((item,i) => i<3 ).map((project:Content,i)=>(
                             <div key={i} className='md:w-1/3'>
                                 <Project
                                     title={project.title}
                                     description={project.description}
                                     tags={project.tags}
-                                    img={CoverImages[i]?.src}/>
+                                    img={CoverImages[i]?.src}
+                                    width="100%"/>
                             </div>
                         ))
                     }

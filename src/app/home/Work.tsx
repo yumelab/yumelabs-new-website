@@ -50,7 +50,7 @@ const Projects = () => {
                           ))
         }
       </div>
-      <div className='md:flex gap-2 overflow-x-hidden hidden'>
+      <div className='md:flex gap-2 hidden'>
         {
             ProjectsList.filter((item,i) => i>5 ).map((project:ProjectType,i)=>(
                 <div key={i} className='w-1/3'>

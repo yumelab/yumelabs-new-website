@@ -19,7 +19,7 @@ const Testimonial = (props:Props) =>{
                     width={100}
                     height={100}/>
             </div>
-            <p className={`text-xl font-extralight italic text-gray-400`}>{message}</p>
+            <p className={`text-lg md:text-xl font-light italic text-gray-400`}>{message}</p>
             <div>
                 <h4 className="text-sm font-semibold">{name}</h4>
                 <h6 className="text-sm text-gray-500">{role}</h6>
