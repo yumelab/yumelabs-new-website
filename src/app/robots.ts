@@ -1,13 +1,13 @@
 import { MetadataRoute } from "next"; 
 
 export default function robot():MetadataRoute.Robots{
-    const baseURL = "https://yume-staging.web.app/"
+    const baseURL = "https://yumelabs.com"
     return {
         rules:[
             {
                 userAgent:"*",
                 allow:"/",
-                disallow:["/admin","privacy"]
+                disallow:["/admin/","/private/"]
             }
         ],
         sitemap:`${baseURL}/sitemap.xml`

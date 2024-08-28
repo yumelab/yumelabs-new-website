@@ -9,4 +9,5 @@ export enum AppRoutes {
     TERMS_AND_CONDITIONS = '/t&c',
     HOME_PAGE = '/',
     CASE_STUDY = '/casestudies',
+    SITEMAP = '/sitemap.xml'
 }

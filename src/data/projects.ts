@@ -41,17 +41,17 @@ export const ProjectsList = [
         "description":"Experience research & innovation for the Next in Cashtech embedded application GUIs."
     },  
     {
-        "tags":["EcommerceUX","DesignedForBharat","consumertech"],
+        "tags":['designforbharat','ecommerceux','consumertech'],
         "title":"BookMyPooja",
         "description":"Fresh Hindu religious services ecommerce experience for the Next in Spiritualtech."
     },  
     {
-        "tags":["MobileUX","Gamification"],
+        "tags":['gamification','mobileux','consumertech'],
         "title":"22Yards",
         "description":"Custom gamification system driven mobile experience for the Next in Sportstech."
     }, 
     {
-        "tags":["ux/ui","development"],
+        "tags":['webux','branding','enterprisetech'],
         "title":"IEAC IIT Madras",
         "description":"Configurable enterprise application experience for the Next in Energy Management."
     },

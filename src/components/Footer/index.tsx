@@ -44,6 +44,8 @@ const Footer = () =>{
                     <Link href={AppRoutes.ABOUT_US}>About Us</Link>
                     {/* <Link href={AppRoutes.LABS}>Labs</Link> */}
                     <Link href={AppRoutes.CONTACT_US}>Contact Us</Link>
+                    
+                    <Link href={AppRoutes.SITEMAP}>Sitemap</Link>
                 </div>
             </div>
             <Copyright/>

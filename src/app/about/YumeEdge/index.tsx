@@ -6,7 +6,7 @@ import Integrated from '@/assets/edge/integrated.svg'
 import Inventive from '@/assets/edge/inventive.svg'
 
 const Main = () =>{
-  const titleA = 'Give the'
+  const titleA = 'Get the'
   const titleB = '"Yume Labs Edge"'
   const Icons = [Invested,Inventive,Integrated]
  return (

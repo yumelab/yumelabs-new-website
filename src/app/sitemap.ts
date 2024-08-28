@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
  
 export default async function sitemap():Promise<MetadataRoute.Sitemap>{
-    const baseURL = "https://yume-staging.web.app/"
+    const baseURL = "https://yumelabs.com"
     return[
         {
             url: `${baseURL}`,
