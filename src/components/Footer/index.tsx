@@ -15,7 +15,7 @@ const Footer = () =>{
                   iconlogo={false}
                   logostyle
                  />
-                 <p className="text-lg text-gray-300 font">Dreams Deliverd.</p>
+                 <p className="text-lg text-gray-300 font">Dreams Delivered.</p>
                 </div>
                 <div className="md:col-start-3 md:col-span-1 flex flex-col gap-6">
                     <div>

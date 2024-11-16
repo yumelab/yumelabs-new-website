@@ -29,10 +29,7 @@ const Nav = () =>{
 
     useEffect(() => {
         shuffleDivs();
-    }, []);
-
-    
-
+    }, []); 
      
 
     return(

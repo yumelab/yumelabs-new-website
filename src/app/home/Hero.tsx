@@ -1,17 +1,18 @@
-import {Noto_SD} from '@/app/fonts'
+import Image from 'next/image';
+import HeroIcons from '@/assets/hero-icons.svg'
 const Hero = () => {
-  return (
-    <section className="grid md:grid-cols-3 gap-4 min-h-fit align-middle items-center md:py-32 py-16">
-      <div className="flex flex-col gap-8 md:col-span-2">
-        <h2 className="md:text-5xl text-3xl text-black md:leading-tight">
-          <i className={`${Noto_SD.className} md:text-5xl  text-3xl font-normal`}>Experience is the New Moat.</i> <br />
-          <i className={`${Noto_SD.className} md:text-5xl  text-3xl font-normal`}>Innovation is the New Marketing.</i>
-        </h2>
-        <p className="text-gray-400 md:text-base text-sm">
-        High-potential global brands trust Yume Labs to drive customer conviction, investor interest, and media momentum by setting apart their AI, Embedded, Mobile, and Web products through deeper user research, product innovation, and experience design.
-        </p>
+  return ( 
+    <section className="flex align-middle items-center md:py-32 py-16">
+      <div className="w-full h-36 relative">
+        <div className="md:text-9xl text-3xl text-black md:leading-tight absolute left-1/2 -translate-x-1/2 w-screen whitespace-nowrap animate-infinite-scroll-fast">
+          <span className="md:text-9xl text-3xl font-medium bg-gradient-to-r from-sky-950 to-blue-800 bg-clip-text text-transparent">Experience</span> is the New Moat. <span className="md:text-9xl  text-3xl font-medium bg-gradient-to-r from-sky-950 to-blue-800 bg-clip-text text-transparent">Innovation </span> <Image className='inline' src={HeroIcons} alt="hero-icon" width={200} height={24}/> is the New Marketing.
+        </div> 
+        <div className="md:text-9xl text-3xl text-black md:leading-tight absolute left-1/2 -translate-x-1/2 w-screen whitespace-nowrap animate-infinite-scroll-fast">
+          <span className="md:text-9xl text-3xl font-medium bg-gradient-to-r from-sky-950 to-blue-800 bg-clip-text text-transparent">Experience</span> is the New Moat. <span className="md:text-9xl  text-3xl font-medium bg-gradient-to-r from-sky-950 to-blue-800 bg-clip-text text-transparent">Innovation </span> <Image className='inline' src={HeroIcons} alt="hero-icon" width={200} height={24}/> is the New Marketing.
+        </div> 
       </div>
     </section>
   );
 };
+
 export default Hero;

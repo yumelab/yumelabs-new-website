@@ -2,27 +2,41 @@ import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
 
-import SendGraphic from "@/assets/sendGraphic.svg"
+import BackgroundGraphic from "@/assets/bg-background.webp"
+import SendGraphic from "@/assets/send.svg"
 
 import { AppRoutes } from '@/constants/routes';  
 
 const Engage = () =>{
     return(
-        <section className="flex flex-col gap-40 md:gap-0 md:flex-row justify-between md:h-[450px] h-fit md:p-16 p-8 relative bg-black rounded-lg my-16">
-            <div className="absolute top-0 left-1/2 md:w-[105%] w-screen h-full -translate-x-1/2 z-10">
+        <section className="flex flex-col gap-40 md:gap-0 md:flex-row md:items-center md:justify-start justify-end  h-[450px] md:p-16 p-8 relative my-16">
+            <div className="absolute top-1/2 -translate-y-1/2 left-1/2 w-full h-full -translate-x-1/2 z-10 overflow-hidden rounded-lg">
                 <Image
-                    alt="contact-us"
-                    className="object-contain w-full h-full aspect-auto"
-                    width={800}
-                    height={400} 
-                    src={SendGraphic}/>
+                    className="object-cover w-full h-full"
+                    alt="yume-labs-gradient-background"
+                    src={BackgroundGraphic}
+                />
             </div>
-            <h3 className="text-white md:text-4xl text-2xl">Ready to Simplify Your Next?</h3>
-            <Link 
-                className="self-end z-20 rounded-full px-16 py-4 bg-gray-50 text-black hover:bg-gray-300"
-                href={AppRoutes.SERVICES}>
-                    Let&apos;s Chat 
-            </Link>   
+            <div className="absolute left-8 md:left-auto top-16 md:right-40 z-10"> 
+                <Image 
+                        alt="contact-us" 
+                        width={80}
+                        height={80} 
+                        src={SendGraphic}/>
+            </div>
+            <div className="z-10 flex flex-col gap-16 ">
+                <h3 className="text-black md:text-4xl text-2xl">Ready to Simplify <br /> Your Next?</h3>
+                <Link  
+                    href={AppRoutes.SERVICES}>
+                        <Button
+                            type="button"
+                            label="Let's Chat"
+                            style="solid"
+                            size="md"
+                            variant="text"
+                            />
+                </Link>  
+            </div> 
         </section>
     )
 }

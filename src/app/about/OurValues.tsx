@@ -1,6 +1,6 @@
 import Image from "next/image"  
 
-import contactBackground from '@/assets/contact-us-bg.webp'
+import contactBackground from '@/assets/bg-background.webp'
 import Excellence from '@/assets/values/excellence.svg'
 import CoCreation from '@/assets/values/co-creation.svg'
 import Simplification from '@/assets/values/simplification.svg'

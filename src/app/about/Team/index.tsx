@@ -14,7 +14,7 @@ import Pritam from "@/assets/founders/pritam.png"
 import Abhinav from "@/assets/founders/abhinav.png"
 import Nabarun from "@/assets/founders/nabarun.png"
 
-import contactBackground from '@/assets/contact-us-bg.webp'
+import contactBackground from '@/assets/bg-background.webp'
 
  gsap.registerPlugin(Draggable);
 

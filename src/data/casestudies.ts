@@ -1,0 +1,27 @@
+export const CaseStudies = [
+    {
+        title:"BookMyPooja",
+        data:"",
+        url:""
+    },
+    {
+        title:"BookMyPooja",
+        data:"",
+        url:""
+    },
+    {
+        title:"BookMyPooja",
+        data:"",
+        url:""
+    },
+    {
+        title:"BookMyPooja",
+        data:"",
+        url:""
+    },
+    {
+        title:"BookMyPooja",
+        data:"",
+        url:""
+    }
+];

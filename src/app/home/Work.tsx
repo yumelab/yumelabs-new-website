@@ -9,7 +9,7 @@ import { AppRoutes } from '@/constants/routes';
 
 import {ProjectType} from '../../types'
 import Button from "@/components/Button";
-
+import Recommendation from "./Recommendation";
 
 import GoodFlows from '@/assets/work/good-flows.webp'
 import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
@@ -18,13 +18,10 @@ import GieseckeDevrient from '@/assets/work/giesecke- devrient.webp'
 import BookMyPooja from '@/assets/work/book-my-pooja.webp'
 import IndicOrigin from '@/assets/work/indic-origin.webp'
 
-import DoItZero from '@/assets/work/do-it-zero.webp'
-import Maiven from '@/assets/work/maiven.webp'
-import Approlabs from '@/assets/work/approlabs.webp'
 
 const Projects = () => {
 
-  const CoverImages = [GoodFlows, GieseckeDevrient, BookMyPooja, TwentyTwoYards, IEACIITMadras, IndicOrigin, ,DoItZero, Maiven, Approlabs]
+  const CoverImages = [GoodFlows, GieseckeDevrient, BookMyPooja, TwentyTwoYards, IEACIITMadras, IndicOrigin]
 
   return (
     <section className="flex flex-col md:gap-16 md:py-32 py-16"> 
@@ -49,21 +46,8 @@ const Projects = () => {
                             img={CoverImages[i]?.src || ''} /> 
                           ))
         }
-      </div>
-      <div className='md:flex gap-2 hidden'>
-        {
-            ProjectsList.filter((item,i) => i>5 ).map((project:ProjectType,i)=>(
-                <div key={i} className='w-1/3'>
-                    <Project 
-                        title={project.title}
-                        description={project.description}
-                        tags={project.tags}
-                        img={CoverImages[i+7]?.src || ''}
-                        width="100%"/>
-                </div>
-            ))
-        }
-      </div>
+      </div> 
+      <Recommendation/>
       <div className='flex items-center justify-center'>
         <Link 
           href={AppRoutes.SERVICES}>

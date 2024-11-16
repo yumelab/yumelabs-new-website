@@ -10,6 +10,7 @@ import Testimonials from "./home/Testimonials";
 import Insights from "./home/insights";
 import Engage from "@/components/Engage";
 import ButtonF from "@/components/ButtonF";
+import GetEdge from "./home/GetEdge";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Clients/>
       <Work />
       {/* <Services /> */}
+       <GetEdge/>
       <Testimonials/> 
       {/* <Insights/> */}
       {/* <Contact/> */}

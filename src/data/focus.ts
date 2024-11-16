@@ -18,3 +18,21 @@ export const FocusList = [
         route:'#experince-design'
     }
 ]
+
+export const Offerings = [
+    {
+        title:"AI Experiences", 
+        description:"Identifies and prioritizes AI opportunities in products. ",
+        tags:['ai opportunities','chatbots','genai','ai interventions']
+    },
+    {
+        title:"Product Innovation", 
+        description:"Uncover insights though research to make informed decision.",
+        tags:['primary research','interviews','competitive analysis']
+    },
+    {
+        title:"Experience Design", 
+        description:"Designing products with data-driven confidence and clarity.",
+        tags:['user stories','user flows','wireframe','usability testing']
+    }
+]

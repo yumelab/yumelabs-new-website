@@ -19,12 +19,13 @@ const config = {
     },
     extend: {
       animation: {
-        'infinite-scroll': 'infinite-scroll 80s linear infinite',
+        'infinite-scroll': 'infinite-scroll 40s linear infinite',
+        'infinite-scroll-fast': 'infinite-scroll 20s linear infinite',
         'spin-slow': 'spin 20s linear infinite',
-      },
+      }, 
       keyframes: {
         'infinite-scroll': {
-          from: { transform: 'translateX(0)' },
+          from: { transform: 'translateX(0)' }, 
           to: { transform: 'translateX(-100%)' },
         }
       }  

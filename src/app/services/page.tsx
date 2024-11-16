@@ -21,8 +21,8 @@ type Content = {
 }
 
 import GoodFlows from '@/assets/work/good-flows.webp'
-import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
-import DoItZero from '@/assets/work/do-it-zero.webp'
+import GieseckeDevrient from '@/assets/work/giesecke- devrient.webp'
+import BookMyPooja from '@/assets/work/book-my-pooja.webp'
 import Project from "@/components/Project";
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 
 const ServicesHome = () =>{  
-    const CoverImages = [GoodFlows,DoItZero,TwentyTwoYards]
+    const CoverImages = [GoodFlows,GieseckeDevrient,BookMyPooja]
 
     return(
         <main className="container md:max-w-screen-xl mx-auto px-8 md:px-0 flex flex-col"> 

@@ -3,7 +3,7 @@ import Image from "next/image"
 import { AppRoutes } from '@/constants/routes';  
 
 import contactGraphics from '@/assets/contact-us-graphics.webp'
-import contactBackground from '@/assets/contact-us-bg.webp'
+import contactBackground from '@/assets/bg-background.webp'
 import Button from "./Button";
 
 const Contact = () =>{
