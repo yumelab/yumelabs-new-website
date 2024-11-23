@@ -2,14 +2,14 @@ import Innovation from "./home/innovation";
 import Work from "./home/Work";
 import Reels from "./home/Reels";
 import Hero from "./home/Hero";
-import Services from "./home/services";
 import Footer from "@/components/Footer";
-import Contact from "@/components/Contact";
 import Clients from "@/components/Clients";
 import Testimonials from "./home/Testimonials";
-import Insights from "./home/insights";
 import Engage from "@/components/Engage";
-import ButtonF from "@/components/ButtonF";
+// import ButtonF from "@/components/ButtonF";
+// import Contact from "@/components/Contact";
+// import Services from "./home/services";
+// import Insights from "./home/insights";
 import GetEdge from "./home/GetEdge";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
       <Clients/>
       <Work />
       {/* <Services /> */}
-       <GetEdge/>
+      <GetEdge/>
       <Testimonials/> 
       {/* <Insights/> */}
       {/* <Contact/> */}

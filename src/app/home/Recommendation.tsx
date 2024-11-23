@@ -23,6 +23,7 @@ const Recommendation = () => {
                             description={project.description}
                             tags={project.tags}
                             img={CoverImages[i].src || defaultImage.src}
+                            url={project.url}
                             width="100%"/>
                     </div>
                 ))

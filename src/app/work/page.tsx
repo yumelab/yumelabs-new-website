@@ -44,6 +44,7 @@ const Work = () => {
                     description={project.description}
                     tags={project.tags}
                     img={Projects[i].src}
+                    url={project.url}
                   />
                 ) : (
                   <Project
@@ -51,6 +52,7 @@ const Work = () => {
                     description={project.description}
                     tags={project.tags}
                     img={Projects[i].src}
+                    url={project.url}
                   />
                 )}
               </div>

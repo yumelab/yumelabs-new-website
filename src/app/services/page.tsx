@@ -18,6 +18,7 @@ type Content = {
     tags:string[];
     title:string;
     description:string;
+    url:string;
 }
 
 import GoodFlows from '@/assets/work/good-flows.webp'
@@ -52,6 +53,7 @@ const ServicesHome = () =>{
                                     description={project.description}
                                     tags={project.tags}
                                     img={CoverImages[i]?.src}
+                                    url={project.url}
                                     width="100%"/>
                             </div>
                         ))

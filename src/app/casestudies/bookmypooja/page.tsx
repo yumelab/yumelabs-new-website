@@ -1,21 +1,19 @@
-import Introduction from "@/app/blog/Introduction"
-import Info from "@/app/blog/Info"
-import List from "@/app/blog/List" 
-import Quote from "@/app/blog/Quote" 
-import Footer from "@/components/Footer"
-
 import {blog} from '@/data/casestudies/bookmypooja'
- 
-import Detials from "@/app/blog/Details"
-import Cover from "./Cover"
-import Branding from "./Branding" 
-import Problems from "./Problems"
-import ImagePanel from "./ImagePanel"
-import Recommendation from "../home/Recommendation"
-import Strategy from "./Strategy"
+
+import Introduction from "@/components/blog/Introduction"
+import Info from "@/components/blog/Info"
+import ImagePanel from "@/components/blog/ImagePanel" 
+import Detials from "@/components/blog/Details"
+import Cover from "@/components/blog/Cover"
+import Strategy from "@/components/blog/Strategy"
+import Quote from "@/components/blog/Quote" 
+import Branding from "@/components/blog/Branding" 
+import List from "@/components/blog/List" 
+import Problems from "@/components/blog/Problems"
+import Footer from "@/components/Footer"
  
 const Blog = () =>{
-    const blogName = "SimpliContract"
+    const blogName = "BookMypooja"
     return(
         <main className="container md:max-w-screen-xl flex flex-col mx-auto px-8">
               
@@ -60,7 +58,7 @@ const Blog = () =>{
                projectName={blog.introduction.title} 
                imgSrc={`/assets/${blog.path}/cover-2.png`} /> 
                <div className="md:py-32">
-               <Recommendation/>
+               {/* <Recommendation/> */}
                </div>
             <Footer/>
         </main>

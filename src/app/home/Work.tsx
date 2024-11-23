@@ -9,7 +9,7 @@ import { AppRoutes } from '@/constants/routes';
 
 import {ProjectType} from '../../types'
 import Button from "@/components/Button";
-import Recommendation from "./Recommendation";
+// import Recommendation from "./Recommendation";
 
 import GoodFlows from '@/assets/work/good-flows.webp'
 import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
@@ -37,17 +37,19 @@ const Projects = () => {
                             title={project.title}
                             description={project.description}
                             tags={project.tags}
+                            url={project.url}
                             img={CoverImages[i]?.src || ''}/>
                         : <ProjectSmall  
                             key={i}   
                             title={project.title}
                             description={project.description}
                             tags={project.tags}
+                            url={project.url}
                             img={CoverImages[i]?.src || ''} /> 
                           ))
         }
       </div> 
-      <Recommendation/>
+      {/* <Recommendation/> */}
       <div className='flex items-center justify-center'>
         <Link 
           href={AppRoutes.SERVICES}>
