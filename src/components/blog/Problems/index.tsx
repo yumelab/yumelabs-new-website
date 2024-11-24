@@ -29,7 +29,7 @@ const Problems = (props:Props) =>{
                                     alt={item.detail}
                                     width={400}
                                     height={400}
-                                    src={`assets/${path}/problem-thumb-${i}.png` || defaultImage}/>
+                                    src={`../assets/${path}/problem-thumb-${i}.png` || defaultImage}/>
                             </div>
                             <h4 className="text-sm md:text-lg font-medium bg-gray-50 md:p-8 p-5 rounded-b-lg">{item.detail}</h4>
                         </div>
@@ -43,7 +43,7 @@ const Problems = (props:Props) =>{
                         <Problem 
                             key={i} 
                             id={i+1} 
-                            imgSrc={`assets/${path}/problem-${i}.png`}
+                            imgSrc={`../assets/${path}/problem-${i}.png`}
                             title={item.title}
                             description={item.description}/>
                     ))

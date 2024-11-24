@@ -25,7 +25,7 @@ const Branding = (props:Props) =>{
                     width={400}
                     height={400} 
                     alt={`cover-imgage-${section.title}`}
-                    src={`/assets/${path}/typography.png`}
+                    src={`../assets/${path}/typography.png`}
                     />
                 </div>
                 <p className="text-sm md:text-base">{description}</p>

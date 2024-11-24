@@ -26,7 +26,7 @@ const Blog = () =>{
              }
              {
                /* image panel section */ 
-               (blog.info.state) && <ImagePanel title={blog.introduction.title} imgSrc={`assets/${blog.path}/header.png`} />
+               (blog.info.state) && <ImagePanel title={blog.introduction.title} imgSrc={`../assets/${blog.path}/header.png`} />
              }
              {
                 /* project scope and  details section */
@@ -36,7 +36,7 @@ const Blog = () =>{
                /* project scope and  details section */
                <Cover
                   projectName={blog.introduction.title}  
-                  imgSrc={`/assets/${blog.path}/cover-1.png`} /> 
+                  imgSrc={`../assets/${blog.path}/cover-1.png`} /> 
              }
              {
                /* project scope and  details section */
@@ -56,7 +56,7 @@ const Blog = () =>{
              } 
             <Cover
                projectName={blog.introduction.title} 
-               imgSrc={`/assets/${blog.path}/cover-2.png`} /> 
+               imgSrc={`../assets/${blog.path}/cover-2.png`} /> 
                <div className="md:py-32">
                {/* <Recommendation/> */}
                </div>
