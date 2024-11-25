@@ -20,7 +20,7 @@ import ogImage from "@/app/opengraph-image.png"
 }
 
 export const metadata: ExtendedMetadata = {
-  metadataBase: new URL('https://yume-staging.web.app/'),
+  metadataBase: new URL('https://yumelabs.com/'),
   title: {
     default:"Yume Labs | UX/UI Design for AI, Embedded, Mobile, & Web",
     template: "%s - Yume Labs | UX/UI Design for AI, Embedded, Mobile, & Web",
