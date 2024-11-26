@@ -1,8 +1,7 @@
 export type DefaultType = {
     title:string;
     description:string;
-}
-
+} 
 
 export type ProjectType = {
     tags:string[];
@@ -28,15 +27,21 @@ export type ProjectIntroduction = {
     summary:string;
 }
 
-export type SectionType = {
+export type Typography = {
     title: string;
     description:string;
-    section:string;
+    more:string; 
 }
 
 export type ProblemType = {
-    detail: string; 
+    detail:string;
     image:string;
+}
+
+export type ProblemsContent = {
+    title: string; 
+    description:string;
+    list:Array<ProblemType>;
 }
 
 

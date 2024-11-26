@@ -1,45 +1,56 @@
-import SubSection from "@/components/SubSection"
-import Problem from "./Problem"
-import defaultImage from '@/assets/bg-background.webp'
-import Image from "next/image"
+import Problem from "./Problem"  
 
-import {SectionType,ProblemType,ProblemDetails} from '@/types'
+import SectionHeader from "@/components/blog/SectionHeader"
+import SectionInfo from "@/components/blog/SectionInfo"
 
-interface Props{
-    section:SectionType;
-    problems:Array<ProblemType>
-    list:Array<ProblemDetails>
+import {ProblemsContent,ProblemDetails,DefaultType} from '@/types'
+import ProblemCard from "./ProblemCard"
+
+interface Props{ 
+    header:string; 
     path:string;
+    objective:DefaultType;
+    problems:ProblemsContent;
+    details:Array<ProblemDetails>; 
 }
 
 const Problems = (props:Props) =>{
-    const  {section,problems,list,path} = props 
+    const  {header,path,objective,problems,details} = props  
 
     return(
         <section className="flex flex-col gap-32">
-            <SubSection  data={section}/>
-
-            <div className="flex md:flex-row flex-col gap-8">
-                {
-                    problems.map((item,i)=>(
-                        <div key={i} > 
-                            <div className="w-full h-full rounded-t-lg overflow-hidden">
-                                <Image
-                                    className="w-full h-full object-cover"
-                                    alt={item.detail}
-                                    width={400}
-                                    height={400}
-                                    src={`../assets/${path}/problem-thumb-${i}.png` || defaultImage}/>
-                            </div>
-                            <h4 className="text-sm md:text-lg font-medium bg-gray-50 md:p-8 p-5 rounded-b-lg">{item.detail}</h4>
-                        </div>
-                    ))
-                }
+             <div className="flex flex-col gap-4">
+                <SectionHeader title={header}/>
+                <SectionInfo title={objective.title} description={objective.description}/>
             </div>
+            {/* <div className="w-full h-full">
+                <Image
+                    alt="image"
+                    className="w-full h-full"
+                    width={500}
+                    height={500}
+                    src={imgSrc}/>
+            </div>  */}
             
-            <div className="md:py-32 flex flex-col gap-32">
+            {/* problems list */} 
+            <div className="flex flex-col gap-24">
+                <SectionInfo title={problems.title} description={problems.description}/>
+                <div className="flex md:flex-row flex-col gap-8">
+                    {
+                        problems.list.map((item,i)=>(
+                            <ProblemCard 
+                                key={i} 
+                                imgSrc={`../assets/${path}/problem-thumb-${i}.png`} 
+                                detail={item.detail}/> 
+                        ))
+                    }
+                </div>
+            </div>
+
+            {/* problems details */}
+            <div className="md:pb-32 flex flex-col gap-32">
                 {
-                    list.map((item,i)=>(
+                    details.map((item,i)=>(
                         <Problem 
                             key={i} 
                             id={i+1} 

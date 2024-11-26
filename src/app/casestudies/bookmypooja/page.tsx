@@ -5,80 +5,77 @@ import Info from "@/components/blog/Info"
 import ImagePanel from "@/components/blog/ImagePanel" 
 import Detials from "@/components/blog/Details"
 import Cover from "@/components/blog/Cover"
-import Strategy from "@/components/blog/Strategy"
-import Quote from "@/components/blog/Quote" 
-import Branding from "@/components/blog/Branding" 
-import List from "@/components/blog/List" 
+import Strategy from "@/components/blog/Strategy" 
+import Branding from "@/components/blog/Branding"  
 import Problems from "@/components/blog/Problems"
 import Recommendation from '@/app/home/Recommendation'
 import Engage from '@/components/Engage'
 import Footer from "@/components/Footer"
 
-
-import GoodFlows from '@/assets/work/good-flows.webp'
-import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
+import GoodFlows from '@/assets/work/good-flows.webp' 
 import IEACIITMadras from '@/assets/work/ieac-iit-madras.webp'
-import GieseckeDevrient from '@/assets/work/giesecke- devrient.webp'
-import BookMyPooja from '@/assets/work/book-my-pooja.webp'
-import IndicOrigin from '@/assets/work/indic-origin.webp'
-import DoItZero from '@/assets/work/do-it-zero.webp'
-import Maiven from '@/assets/work/maiven.webp'
-import Approlabs from '@/assets/work/approlabs.webp'
+import GieseckeDevrient from '@/assets/work/giesecke- devrient.webp' 
 
 import {ProjectsList} from "@/data/projects"; 
  
-const Blog = () =>{
-    const blogName = "BookMypooja"
+const Blog = () =>{ 
     return(
         <main className="container md:max-w-screen-xl flex flex-col mx-auto px-8">
               
-             {/* introduction section */
-                (blog.introduction.state) && <Introduction data={blog.introduction}/>
+             {/* overview section */
+                (blog.overview.state) && <Introduction data={blog.overview}/>
              }
              {
-                /* info section */ 
-                (blog.info.state) && <Info items={blog.info.data}/>
+                /* key attribute section */ 
+               (blog.keyAttributes.state) 
+               && <Info items={blog.keyAttributes.data}/>
              }
-             {
-               /* image panel section */ 
-               (blog.info.state) && <ImagePanel title={blog.introduction.title} imgSrc={`../assets/${blog.path}/header.png`} />
+             { 
+               <ImagePanel 
+                     title={blog.overview.title} 
+                     imgSrc={`../assets/${blog.path}/header.png`} />
              }
              {
                 /* project scope and  details section */
-                (blog.details.state) && <Detials details={blog.details}/> 
+                (blog.outline.state) && <Detials details={blog.outline}/> 
              }
              {
-               /* project scope and  details section */
                <Cover
-                  projectName={blog.introduction.title}  
+                  projectName={blog.overview.title}  
                   imgSrc={`../assets/${blog.path}/cover-1.png`} /> 
              }
              {
-               /* project scope and  details section */
-               <Strategy data={blog.strategy} path={blog.path}/>
-             }
-             {/* <Tagsbar /> */}
-             <Quote text={blog.quote}/>
+               /* project strategy section */
+               (blog.strategy.state) 
+               && <Strategy 
+                     data={blog.strategy} 
+                     path={blog.path}/>
+             } 
              {
-               (blog.branding.state) && <Branding path={blog.path} section={blog.branding.section}/>
-             }
-             {/* <Paragraph title={blog.paragraph} description={blog.description} /> */}
-             <List title={blog.list.title} description={blog.list.description} list={blog.list.items} />
-             {/* <Socialbar/> */}
+               /* branding section */
+               (blog.brandIdentity.state) 
+               && <Branding 
+                     header={blog.brandIdentity.header} 
+                     path={blog.path} 
+                     typography={blog.brandIdentity.typography}/>
+             } 
              {
                 /* product design section */
-                (blog.design.state) && <Problems path={blog.path} section={blog.design.section} problems={blog.design.problems} list={blog.design.list}/>
+                (blog.designApproach.state) 
+                && <Problems 
+                        header={blog.designApproach.header} 
+                        path={blog.path} 
+                        objective={blog.designApproach.objective} 
+                        problems={blog.designApproach.problems} 
+                        details={blog.designApproach.details}/>
              } 
             <Cover
-               projectName={blog.introduction.title} 
-               imgSrc={`../assets/${blog.path}/cover-2.png`} /> 
-               <div className="md:py-32">
-               {/* <Recommendation/> */}
-               </div>
+               projectName={blog.overview.title} 
+               imgSrc={`../assets/${blog.path}/cover-2.png`} />  
+               <div className='h-32'></div>
             <Recommendation
                projects = {ProjectsList.filter((item,i)=>i<3)}
-               images = {[GoodFlows.src, GieseckeDevrient.src, IEACIITMadras.src]}
-            />
+               images = {[GoodFlows.src, GieseckeDevrient.src, IEACIITMadras.src]}/>
             <Engage/>
             <Footer/>
         </main>

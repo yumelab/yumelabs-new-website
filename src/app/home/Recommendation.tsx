@@ -12,18 +12,17 @@ const Recommendation = (props:Props) => {
     const {projects,images} = props 
      
     return(
-        <div className='md:flex gap-2 hidden'>
+        <div className='md:grid md:grid-cols-3 gap-2 hidden'>
             {
-                projects.map((project:ProjectType,i)=>(
-                    <div key={i} className='w-1/3'>
-                        <Project 
-                            title={project.title}
-                            description={project.description}
-                            tags={project.tags}
-                            img={images[i] || defaultImage.src}
-                            url={project.url}
-                            width="100%"/>
-                    </div>
+                projects.map((project:ProjectType,i)=>( 
+                    <Project  
+                        key={i}
+                        title={project.title}
+                        description={project.description}
+                        tags={project.tags}
+                        img={images[i] || defaultImage.src}
+                        url={project.url}
+                        width="100%"/>
                 ))
             }
         </div>

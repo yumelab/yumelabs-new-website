@@ -11,11 +11,11 @@ const NavLinks = () =>{
                 href={AppRoutes.HOME_PAGE}>
                 Home
             </Link> 
-            {/* <Link
+            <Link
                 className='w-full h-full whitespace-nowrap text-slate-500 text-sm'
-                href={AppRoutes.OUR_WORK}>
-                Work
-            </Link>  */} 
+                href={AppRoutes.CASE_STUDY}>
+                Case Studies
+            </Link>  
             <Link
                 className='w-full h-full whitespace-nowrap text-slate-500 text-sm'
                 href={AppRoutes.SERVICES}>

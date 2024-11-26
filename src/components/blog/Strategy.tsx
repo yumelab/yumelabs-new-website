@@ -12,7 +12,6 @@ const Strategy = (props:Props) =>{
         <section className='flex flex-col gap-16 md:py-32 py-24'>
             <InlineSection title={data.title} description={data.description}/>
             <ImagePanel title={data.title}  imgSrc={`../assets/${path}/strategy.png`} />
-
         </section>
     )
 }
