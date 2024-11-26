@@ -1,5 +1,5 @@
-import Problem from "./Problem"  
-
+import Problem from "./Problem"   
+import ImagePanel from "../ImagePanel"
 import SectionHeader from "@/components/blog/SectionHeader"
 import SectionInfo from "@/components/blog/SectionInfo"
 
@@ -23,14 +23,11 @@ const Problems = (props:Props) =>{
                 <SectionHeader title={header}/>
                 <SectionInfo title={objective.title} description={objective.description}/>
             </div>
-            {/* <div className="w-full h-full">
-                <Image
-                    alt="image"
-                    className="w-full h-full"
-                    width={500}
-                    height={500}
-                    src={imgSrc}/>
-            </div>  */}
+ 
+            <ImagePanel
+                title={header}
+                imgSrc={`../assets/${path}/product-design.png`}
+            />
             
             {/* problems list */} 
             <div className="flex flex-col gap-24">

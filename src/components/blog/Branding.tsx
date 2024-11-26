@@ -1,7 +1,8 @@
-import SectionHeader from "@/components/blog/SectionHeader"
-import SectionInfo from "@/components/blog/SectionInfo"
 import Image from "next/image"
+import SectionHeader from "@/components/blog/SectionHeader"
+import SectionInfo from "@/components/blog/SectionInfo" 
 import {Typography} from '@/types'
+import ImagePanel from "./ImagePanel";
 
 interface Props{ 
     header:string;
@@ -18,7 +19,6 @@ const Branding = (props:Props) =>{
                 <SectionHeader title={header}/>
                 <SectionInfo title={typography.title} description={typography.description}/>
             </div>
-
             <div className={`${fw?'md:w-full':'md:w-[70%] md:ml-[30%]'} w-full flex flex-col gap-16`}>
                 <div className="max-h-fit w-full">
                     <Image
@@ -31,6 +31,9 @@ const Branding = (props:Props) =>{
                 </div>
                 <p className="text-sm md:text-base" dangerouslySetInnerHTML={{ __html: typography.more }}/>
              </div>
+             <ImagePanel
+                title={header}
+                imgSrc={`../assets/${path}/product-branding.png`}/>
         </section>
     )
 }
