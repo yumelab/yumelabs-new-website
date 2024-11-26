@@ -4,7 +4,7 @@ import Image from 'next/image'
 // import Workplace from "./Workplace";
 
 import Hero from './Hero';
-import YumeEdge from "./YumeEdge";
+import YumeEdge from "@/app/home/GetEdge";
 import OurValues from "./OurValues";
 import Founders from "./Team";
 import CompanyInfo from "./CompanyInfo";

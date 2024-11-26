@@ -9,7 +9,7 @@ import { AppRoutes } from '@/constants/routes';
 
 import {ProjectType} from '../../types'
 import Button from "@/components/Button";
-// import Recommendation from "./Recommendation";
+import Recommendation from "./Recommendation";
 
 import GoodFlows from '@/assets/work/good-flows.webp'
 import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
@@ -17,7 +17,9 @@ import IEACIITMadras from '@/assets/work/ieac-iit-madras.webp'
 import GieseckeDevrient from '@/assets/work/giesecke- devrient.webp'
 import BookMyPooja from '@/assets/work/book-my-pooja.webp'
 import IndicOrigin from '@/assets/work/indic-origin.webp'
-
+import DoItZero from '@/assets/work/do-it-zero.webp'
+import Maiven from '@/assets/work/maiven.webp'
+import Approlabs from '@/assets/work/approlabs.webp'
 
 const Projects = () => {
 
@@ -49,7 +51,10 @@ const Projects = () => {
                           ))
         }
       </div> 
-      {/* <Recommendation/> */}
+      <Recommendation
+        projects = {ProjectsList.filter((item,i)=>i>5)}
+        images = {[DoItZero.src, Maiven.src, Approlabs.src]}
+      />
       <div className='flex items-center justify-center'>
         <Link 
           href={AppRoutes.SERVICES}>

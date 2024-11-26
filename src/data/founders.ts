@@ -26,7 +26,7 @@ export const FoundersList = [
             "meeting":"https://calendar.app.google/9sUkVaAPo1V9Uer47"
     },
     {
-        "name":"Nabanrun Bhowmick",
+        "name":"Nabarun Bhowmick",
         "role":"Co-Founder & Chief Design Officer",
         "quote":"I am a painter and a believer in balanced procrastination for creatives. Outside of work, I enjoy sketching for relaxation, practicing meditation, and gourmet cooking.",
         "description":"I hold 35+ international innovation patents as part of global innovation teams at Boston Scientific, IFB, and Godrej. I started the Experience Design practice at Boston Scientific. I have a Master’s degree in Industrial Design from IDC-IIT Bombay and a Bachelor's degree in Electronics Engineering from IIEST Shibpur.",

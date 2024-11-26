@@ -10,7 +10,22 @@ import Quote from "@/components/blog/Quote"
 import Branding from "@/components/blog/Branding" 
 import List from "@/components/blog/List" 
 import Problems from "@/components/blog/Problems"
+import Recommendation from '@/app/home/Recommendation'
+import Engage from '@/components/Engage'
 import Footer from "@/components/Footer"
+
+
+import GoodFlows from '@/assets/work/good-flows.webp'
+import TwentyTwoYards from '@/assets/work/twenty-two-yards.webp'
+import IEACIITMadras from '@/assets/work/ieac-iit-madras.webp'
+import GieseckeDevrient from '@/assets/work/giesecke- devrient.webp'
+import BookMyPooja from '@/assets/work/book-my-pooja.webp'
+import IndicOrigin from '@/assets/work/indic-origin.webp'
+import DoItZero from '@/assets/work/do-it-zero.webp'
+import Maiven from '@/assets/work/maiven.webp'
+import Approlabs from '@/assets/work/approlabs.webp'
+
+import {ProjectsList} from "@/data/projects"; 
  
 const Blog = () =>{
     const blogName = "BookMypooja"
@@ -60,6 +75,11 @@ const Blog = () =>{
                <div className="md:py-32">
                {/* <Recommendation/> */}
                </div>
+            <Recommendation
+               projects = {ProjectsList.filter((item,i)=>i<3)}
+               images = {[GoodFlows.src, GieseckeDevrient.src, IEACIITMadras.src]}
+            />
+            <Engage/>
             <Footer/>
         </main>
     )

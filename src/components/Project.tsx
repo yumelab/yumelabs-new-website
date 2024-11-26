@@ -14,7 +14,7 @@ interface Props{
 const Project = (props:Props) =>{
     const  {tags,title,description,img,width="70%",url} = props
     return(
-        <Link href={`${url}`}> 
+        <Link href={`/${url}`}> 
             <div className="flex flex-col gap-4 md:pb-24 pb-12 break-inside-avoid">
                 <div className="w-full overflow-hidden aspect-square rounded-md">
                     <Image

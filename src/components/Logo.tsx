@@ -1,7 +1,7 @@
 import Link from "next/link";  
 import Image from "next/image"; 
 import { AppRoutes } from '@/constants/routes'; 
-import BrandLogo from '@/assets/yume-logo-gray.svg'
+import BrandLogo from '@/assets/yume-logo.svg'
 import BrandLogoWhite from '@/assets/yume-logo-white.svg' 
 
 interface Props{
