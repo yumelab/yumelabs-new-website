@@ -1,7 +1,7 @@
 import Innovation from "./home/innovation";
 import Work from "./home/Work";
 import Reels from "./home/Reels";
-import Hero from "./home/Hero";
+import HeroAI from "./home/HeroAI";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Testimonials from "./home/Testimonials";
@@ -15,7 +15,7 @@ import GetEdge from "./home/GetEdge";
 export default function Home() {
   return (
     <main className="container md:max-w-screen-xl flex flex-col mx-auto px-6">
-      <Hero />
+      <HeroAI />
       <Reels /> 
       <Innovation />
       <Clients/>
