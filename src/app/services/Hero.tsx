@@ -1,17 +1,11 @@
-import {Noto_SD} from '@/app/fonts'
 const Hero = () => {
   return (
-    <section className="grid md:grid-cols-3 gap-4 min-h-fit align-middle items-center md:py-32 py-16">
-      <div className="flex flex-col gap-8 md:col-span-2">
-        <h2 className="md:text-5xl text-3xl text-black md:leading-tight">
-          <i className={`${Noto_SD.className} md:text-5xl  text-3xl font-normal`}>Experience is the New Moat.</i> <br />
-          <i className={`${Noto_SD.className} md:text-5xl  text-3xl font-normal`}>Innovation is the New Marketing.</i>
-        </h2>
-        <p className="text-gray-400 md:text-base text-sm">
-        High-potential global brands trust Yume Labs to drive customer conviction, investor interest, and media momentum by setting apart their AI, Embedded, Mobile, and Web products through deeper user research, product innovation, and experience design.
-        </p>
-      </div>
-    </section>
+       <section className="flex align-middle items-center py-32">
+            <div className="flex flex-col gap-8 md:w-[70%]">
+                <h1 className="md:text-7xl text-5xl font-medium text-gray-800">UX for <span className="bg-gradient-to-r from-red-100 to-blue-600 bg-clip-text text-transparent">AI</span><sup className="md:text-3xl text-xl align-super text-purple-300">✦</sup><br /> And Everything Else.</h1>
+                <p className="md:text-2xl md:leading-snug text-xl leading-snug text-gray-500">Our work sits at the intersection of product innovation, experiences design, and AI experiences.</p>
+            </div>
+        </section>
   );
 };
 export default Hero;

@@ -3,11 +3,10 @@
 
 const Reels = () => {
   return (
-    <section className="w-full md:h-screen h-half relative">
-      <div className="absolute w-screen h-full left-1/2 -translate-x-1/2">
-        <video className="w-full h-full object-cover" autoPlay muted loop>
-            <source src='./reels.mp4' type="video/mp4" />
-        </video>
+    <section className="absolute top-0 left-0 w-full h-screen  -z-10">
+      <div className="w-screen h-full flex md:flex-row flex-col blur-2xl">
+        <div className="bg-purple-100 w-full h-full rounded-full"></div>
+        <div className="bg-orange-50 w-full h-full rounded-full"></div>
       </div>
     </section>
   );

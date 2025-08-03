@@ -37,7 +37,7 @@ const Nav = () =>{
             <div className='hidden md:flex flex-row items-center gap-4 md:w-fit py-8 md:py-0'>
                  <NavLinks/>
             </div> 
-            <div className="grid grid-cols-2 gap-2 w-12 h-12 p-3 grid-rows-2 md:hidden" onClick={toggleNavbar} aria-hidden> 
+            <div className="grid grid-cols-2 gap-2 w-6 h-6 grid-rows-2 md:hidden" onClick={toggleNavbar} aria-hidden> 
                 {
                     dots.map((item,i)=>(
                         <div key={i} className={`w-full h-full rounded-full ${item.style}`}></div>

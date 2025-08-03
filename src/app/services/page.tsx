@@ -25,6 +25,7 @@ import GoodFlows from '@/assets/work/good-flows.webp'
 import GieseckeDevrient from '@/assets/work/giesecke- devrient.webp'
 import BookMyPooja from '@/assets/work/book-my-pooja.webp'
 import Project from "@/components/Project";
+import Reels from "../home/Reels";
 
 export const metadata: Metadata = {
     title: "Our Services",
@@ -36,8 +37,9 @@ const ServicesHome = () =>{
     const CoverImages = [GoodFlows,GieseckeDevrient,BookMyPooja]
 
     return(
-        <main className="container md:max-w-screen-xl mx-auto px-8 md:px-0 flex flex-col"> 
+        <main className="container md:max-w-screen-2xl mx-auto px-4 md:px-24 flex flex-col"> 
             <Hero/>
+            <Reels/>
             <Offerings/>
             <Approach/>
             <section className='flex flex-col gap-16 md:py-32 py-24'>

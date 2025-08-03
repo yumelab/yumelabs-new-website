@@ -12,6 +12,7 @@ import Engage from "@/components/Engage";
 import Footer from "@/components/Footer";
 
 import AboutBackground from '@/assets/bg-about.webp'
+import Reels from "../home/Reels";
 
 export const metadata: Metadata = {
     title: "About Us",
@@ -20,23 +21,17 @@ export const metadata: Metadata = {
 
 const About = () =>{
     return(
-        <main className="container md:max-w-screen-xl mx-auto px-8 md:px-0 flex flex-col">
+        <main className="container md:max-w-screen-2xl mx-auto px-4 md:px-24 flex flex-col">
+            <Reels/>
             <Hero/>
-            <section className="md:h-[38rem] aspect-square md:aspect-auto shadow-sm">
-                <Image
-                    alt="contact-us"
-                    className="object-cover w-full h-full rounded-lg"
-                    width={1280}
-                    height={800} 
-                    src={AboutBackground}/>
-            </section>
+             
             <YumeEdge/> 
             <section className="h-[50vh] flex items-center justify-center">
                 <h2 className="md:text-6xl text-3xl text-center bg-gradient-to-r from-indigo-700 via-red-300 to-pink-700 inline-block text-transparent bg-clip-text">We’re on a Mission to Humanize Adoption for “Tech That Matters”.</h2>
             </section>
             <OurValues/>
             <Founders/>
-            <CompanyInfo/>
+            {/* <CompanyInfo/> */}
             <Engage/>
             {/* <Partners/> */}
             {/* <Workplace/>  */}

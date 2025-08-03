@@ -6,27 +6,26 @@ import Logo from "../Logo";
 const Footer = () =>{
     return(
         <section className="max-h-fit  text-white pt-32 pb-8 flex flex-col md:gap-32 gap-16 relative">
-            <div className="absolute top-0 left-1/2 w-screen h-full bg-black -translate-x-1/2 -z-10"></div>
+            <div className="absolute top-0 left-1/2 w-screen h-full bg-gray-950 -translate-x-1/2 -z-10"></div>
             <div className="grid md:grid-cols-4 md:gap-32 gap-16">
-                <div className="md:col-span-1 flex flex-col gap-8">
+                <div className="md:col-span-1 flex flex-col gap-2">
                  <Logo
                   size="sm"
+                  theme="dark"
                   textlogo={false}
-                  iconlogo={false}
-                  logostyle
+                  iconlogo={false}  
                  />
-                 <p className="text-lg text-gray-300 font">Dreams Delivered.</p>
                 </div>
                 <div className="md:col-start-3 md:col-span-1 flex flex-col gap-6">
                     <div>
                         <span className="text-xs font-medium uppercase block">Email</span>
-                        <Link href='mailto:discover@yumelabs.com' className="text-sm text-gray-300 font">
+                        <Link href={AppRoutes.EMAIL} className="text-sm text-gray-300 font">
                             pritam@yumelabs.com
                         </Link>
                     </div> 
                     <div>
                         <span className="text-xs font-medium uppercase block">Phone</span>
-                        <Link href='tel:8583035111' className="text-sm text-gray-300 font">
+                        <Link href={AppRoutes.WHATSAPP} className="text-sm text-gray-300 font">
                             +91 98106 75713 
                         </Link>
                     </div>

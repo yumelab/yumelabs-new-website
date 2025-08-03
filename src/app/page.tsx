@@ -1,6 +1,7 @@
 import Innovation from "./home/innovation";
 import Work from "./home/Work";
 import Reels from "./home/Reels";
+import Milestone from"./home/Milestones";
 import HeroAI from "./home/HeroAI";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
@@ -14,11 +15,12 @@ import GetEdge from "./home/GetEdge";
 
 export default function Home() {
   return (
-    <main className="container md:max-w-screen-xl flex flex-col mx-auto px-6">
+    <main className="container md:max-w-screen-2xl flex flex-col mx-auto md:px-24 px-4">
       <HeroAI />
       <Reels /> 
-      <Innovation />
       <Clients/>
+      <Innovation />
+      <Milestone/>
       <Work />
       {/* <Services /> */}
       <GetEdge/>

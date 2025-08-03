@@ -9,5 +9,7 @@ export enum AppRoutes {
     TERMS_AND_CONDITIONS = '/t&c',
     HOME_PAGE = '/',
     CASE_STUDY = '/casestudies',
-    SITEMAP = '/sitemap.xml'
+    SITEMAP = '/sitemap.xml',
+    WHATSAPP = 'tel:+918583035111',
+    EMAIL = 'mailto:discover@yumelabs.com',
 }

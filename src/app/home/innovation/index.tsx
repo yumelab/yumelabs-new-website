@@ -22,8 +22,8 @@ import Offering from "./Offering";
 const Main = () => {
   const FocusImages = [ai, innovation, ux]
   return (
-    <section className="flex flex-col gap-16 md:py-32 min-h-fit"> 
-      <div className="grid md:grid-cols-3 gap-4"> 
+    <section className="flex flex-col gap-16 md:py-32 py-16 min-h-fit"> 
+      <div className="grid md:grid-cols-3 gap-3"> 
         {
             Offerings.map((item,i)=>(
               <Offering

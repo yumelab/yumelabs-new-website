@@ -22,6 +22,7 @@ import DoItZero from "@/assets/work/do-it-zero.webp";
 import Maiven from "@/assets/work/maiven.webp";
 import Approlabs from "@/assets/work/approlabs.webp";
 import Hero from "./Hero";
+import Reels from "../home/Reels";
 
 export const metadata: Metadata = {
   title: "Our Portfolio",
@@ -42,8 +43,9 @@ const CaseStudies = () => {
     Approlabs,
   ];
   return (
-    <main className="container md:max-w-screen-xl mx-auto px-8 md:px-0 flex flex-col">
+    <main className="container md:max-w-screen-2xl mx-auto px-4 md:px-24 flex flex-col">
       <Hero/>
+      <Reels/>
       <section className="flex flex-col md:gap-16 md:py-32 py-16">
         <div className="md:columns-2 gap-4 pt-16 md:pt-0">
           {ProjectsList.map((project: ProjectType, i) =>

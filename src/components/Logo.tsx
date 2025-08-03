@@ -6,22 +6,27 @@ import BrandLogoWhite from '@/assets/yume-logo-white.svg'
 
 interface Props{
     size:'sm' | 'md' | 'lg';
+    theme:'dark' | 'light';
     textlogo:boolean;
-    iconlogo:boolean;
-    logostyle:boolean;
+    iconlogo:boolean; 
 }
 
 const Logo = (props:Props) =>{
-    const {size,textlogo,iconlogo,logostyle} = props
+    const {size,textlogo,theme,iconlogo} = props 
+    const textStyle = theme==='dark'?'text-white':'text-gray-800'
+    const logoStyle = theme==='dark'?BrandLogoWhite:BrandLogo
     return(
         <Link
             className='flex gap-4 items-center max-w-fit' 
             href={AppRoutes.HOME_PAGE}>
             <Image 
-                className={`h-7 max-w-fit  ${iconlogo?'hidden':'block'} `} 
-                src={logostyle?BrandLogoWhite:BrandLogo}
+                className={`h-8 max-w-fit  ${iconlogo?'hidden':'block'} `} 
+                src={logoStyle}
                 alt="yume labs logo" />
-            <h4 className="uppercase font-medium text-black tracking-widest">Yume Labs</h4>
+            <div className="flex flex-col gap-0">
+                <h4 className={`uppercase tracking-widest text-lg font-semibold ${textStyle}`}>Yume Labs</h4> 
+                <p className={`text-xs ${textStyle}`}>Dreams Delivered.</p>
+            </div>
         </Link>
     )
 }

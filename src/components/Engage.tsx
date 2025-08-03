@@ -27,7 +27,7 @@ const Engage = () =>{
             <div className="z-10 flex flex-col gap-16 ">
                 <h3 className="text-black md:text-4xl text-2xl">Ready to Simplify <br /> Your Next?</h3>
                 <Link  
-                    href={AppRoutes.SERVICES}>
+                    href={AppRoutes.WHATSAPP}>
                         <Button
                             type="button"
                             label="Let's Chat"

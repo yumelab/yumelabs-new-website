@@ -12,7 +12,7 @@ interface Props{
 const Offering = (props:Props) =>{
     const {title,description,bgImage,tags} = props
     return (
-        <div className="flex flex-col justify-between rounded-2xl overflow-hidden"> 
+        <div className="flex flex-col justify-between rounded-xl overflow-hidden"> 
             <div className="relative p-6 md:h-64 h-56">
                 <h4 className="text-white max-w-fit">{title}</h4> 
                 <div className="absolute top-0 left-1/2 w-full h-full -translate-x-1/2 -z-10">
@@ -24,7 +24,7 @@ const Offering = (props:Props) =>{
                         src={bgImage}/>
                 </div> 
             </div>
-            <div className="flex flex-col gap-8 bg-gray-100 p-6 rounded-b-2xl">
+            <div className="flex flex-col gap-8 bg-gray-100 p-6 rounded-b-xl">
                 <div className="md:text-lg"> 
                     {description}
                 </div>
