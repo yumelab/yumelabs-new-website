@@ -20,7 +20,7 @@ import {ProjectsList} from "@/data/projects";
  
 const Blog = () =>{ 
     return(
-        <main className="container md:max-w-screen-xl flex flex-col mx-auto px-8">
+        <main className="container md:max-w-screen-2xl flex flex-col mx-auto px-4 md:px-24">
               
              {/* overview section */
                 (blog.overview.state) && <Introduction data={blog.overview}/>
