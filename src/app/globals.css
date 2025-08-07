@@ -38,4 +38,5 @@ body {
 
 .overlay{
   border-image:fill 1 linear-gradient(hsla(0, 0%, 0%, 0.265) , hsla(0, 0%, 0%, 0.081)); 
-}
+} 
+ 
