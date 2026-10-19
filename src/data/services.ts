@@ -1,105 +1,150 @@
-export const offerringProduct = [
-    {   
-        id:1,
-        title:"User Research",
-        icon:'user-research',
-        description:"We use robust qualitative methods to empathize and collect actionable insights about users’ needs, preferences, and pain points to make informed product decisions."
-    },
-    {   
-        id:2,
-        title:"Competitive Research",
-        icon:'competitive-research',
-        description:"Analyse strengths, weaknesses, strategies, and market positioning of competitors to make informed strategic positioning of your product."
-    },
-    {   
-        id:3,
-        title:"Heuristic Evaluation",
-        icon:'heuristic-evaluation',
-        description:"Evaluate and design your product against a set of recognised usability principles or heuristics, typically derived from established usability guidelines or best practices."
-    },
-    {   
-        id:4,
-        title:"Usability Testing",
-        icon:'usability-testing',
-        description:"Test and refine your product before it hits the market. We use a proven methodology to identify usability issues, collect qualitative and quantitative data, and determine the participant’s satisfaction with the product."
-    },
-    {   
-        id:5,
-        title:"Design Thinking",
-        icon:'design-thinking',
-        description:"Design by keeping the user and business objective at the centre stage of innovation. Problem-solving that emphasises understanding the user’s needs, iterative development, and collaborative, interdisciplinary teamwork."
-    },
-    {   
-        id:6,
-        title:"Design Strategy",
-        icon:'design-strategy',
-        description:"Integrate user insights, market research, and business goals into a coherent framework that drives innovation and ensures successful outcomes for your business."
-    }
+export type Service = {
+  id: string;
+  title: string;
+  summary: string;
+  tags: string[];
+  offerings: { title: string; description: string }[];
+};
+
+export const services: Service[] = [
+  {
+    id: "ai-experiences",
+    title: "AI Experiences",
+    summary: "Identify, prioritise, and design the AI features that create real impact for your users.",
+    tags: ["AI opportunities", "Chatbots", "GenAI", "AI interventions"],
+    offerings: [
+      {
+        title: "AI Opportunity Mapping",
+        description:
+          "We analyse your product and data to uncover patterns and strategic areas for AI, so investments align with business goals and maximise ROI.",
+      },
+      {
+        title: "AI Strategy & Consulting",
+        description:
+          "We assess current practices, identify AI opportunities, and build a tailored roadmap with clear implementation steps and ongoing support.",
+      },
+      {
+        title: "AI Design & Prototyping",
+        description:
+          "We use AI to generate design variations and build interactive prototypes that test functionality and usability before full-scale development.",
+      },
+      {
+        title: "AI Design Sprint",
+        description:
+          "A 5–7 day collaborative sprint combining AI and human creativity to ideate, prototype, and test AI-driven solutions.",
+      },
+    ],
+  },
+  {
+    id: "product-innovation",
+    title: "Product Innovation",
+    summary: "Uncover insights through research so you make product decisions with confidence.",
+    tags: ["Primary research", "Interviews", "Competitive analysis"],
+    offerings: [
+      {
+        title: "User Research",
+        description:
+          "Robust qualitative methods to understand users' needs, preferences, and pain points, and turn them into actionable insight.",
+      },
+      {
+        title: "Competitive Research",
+        description:
+          "Analyse competitors' strengths, weaknesses, strategies, and positioning to sharpen your own.",
+      },
+      {
+        title: "Heuristic Evaluation",
+        description: "Evaluate your product against established usability principles and best practices.",
+      },
+      {
+        title: "Usability Testing",
+        description:
+          "Test and refine before launch with a proven method for finding usability issues and measuring satisfaction.",
+      },
+      {
+        title: "Design Thinking",
+        description:
+          "Iterative, collaborative problem-solving that keeps users and business objectives at the centre of innovation.",
+      },
+      {
+        title: "Design Strategy",
+        description:
+          "Integrate user insight, market research, and business goals into a coherent framework that drives outcomes.",
+      },
+    ],
+  },
+  {
+    id: "experience-design",
+    title: "Experience Design",
+    summary: "Design products with data-driven confidence and clarity, from flows to final pixels.",
+    tags: ["User stories", "User flows", "Wireframes", "Usability testing"],
+    offerings: [
+      {
+        title: "User Stories",
+        description: "Capture requirements from the user's perspective as short, valuable descriptions of functionality.",
+      },
+      {
+        title: "User Flows",
+        description: "Map the steps users take to complete tasks, revealing bottlenecks and opportunities to simplify.",
+      },
+      {
+        title: "Information Architecture",
+        description: "Organise, structure, and label content so users find what they need and complete tasks efficiently.",
+      },
+      {
+        title: "Wireframes",
+        description: "Define structure, layout, and functionality early, before visual detail gets in the way.",
+      },
+      {
+        title: "Interaction Design",
+        description: "Craft meaningful, effective communication between users and products through the interaction layer.",
+      },
+      {
+        title: "Visual Communication",
+        description: "Capture attention and communicate clearly through thoughtful graphics, imagery, and typography.",
+      },
+    ],
+  },
 ];
 
-export const offerringDigital = [
-    {   
-        id:1,
-        title:"User Stories",
-        icon:'user-research',
-        description:"Understand and capture the requirements of a system or product from the perspective of its users. Each user story is a short, simple description of a feature or functionality that provides value to a specific user type."
-    },
-    {   
-        id:2,
-        title:"User Flows",
-        icon:'competitive-research',
-        description:" Map the steps a user takes to complete a specific task within a product or service. By visualising these steps, teams can identify potential bottlenecks, improve the user experience, and ensure that users can achieve their goals efficiently."
-    },
-    {   
-        id:3,
-        title:"Information Architecture",
-        icon:'heuristic-evaluation',
-        description:"Organising, structuring, and labelling content in an important part of user experience. Help your users find information and complete tasks efficiently with a robust Information Architecture of your product."
-    },
-    {   
-        id:4,
-        title:"Wireframes",
-        icon:'usability-testing',
-        description:"Capture the basic structure and flow of a product with wireframes in the early stages of the design process. Focus on the layout, functionality, and placement of elements on a page, without getting into the details of design or styling."
-    },
-    {   
-        id:5,
-        title:"Interaction Design",
-        icon:'design-thinking',
-        description:"Bundle your solution through an impactful interaction layer, crafting meaningful and effective communication between users and products."
-    },
-    {   
-        id:6,
-        title:"Visual Communication",
-        icon:'design-strategy',
-        description:"Capture your users attention and communicate your message effectively through enriching and thoughtful graphics, images, symbols, and typography."
-    }
-];
-
-export const offerringAIExperiences = [
-    
-    {   
-        id:1,
-        title:"AI Opportunity Mapping",
-        icon:'usability-testing',
-        description:"Identifies and prioritizes AI opportunities within the client's design process. Using AI tools, the team analyzes data to uncover patterns and strategic areas for AI intervention, ensuring investments align with business goals and maximize ROI."
-    },
-    {   
-        id:2,
-        title:"AI Strategy & Consulting",
-        icon:'user-research',
-        description:"Guides businesses through AI integration in design processes, enhancing efficiency and innovation. This service includes assessing current practices, identifying AI opportunities, and developing a tailored AI roadmap with implementation steps and ongoing support."
-    },
-    {   
-        id:3,
-        title:"AI Designing & Prototyping",
-        icon:'competitive-research',
-        description:"Leverages AI to automate tasks, generate design variations, and create interactive prototypes. The process involves analyzing user data, predicting trends, and developing AI-driven models for testing functionality and usability before full-scale development."
-    },
-    {   
-        id:4,
-        title:"AI Design Sprint",
-        icon:'heuristic-evaluation',
-        description:"An accelerated, collaborative process that combines AI and human creativity to solve design challenges in 5-7 days. The team ideates, prototypes, and tests AI-driven solutions, ensuring innovative and feasible designs through rapid prototyping and user testing."
-    }
+export const methods = [
+  {
+    title: "Innovate",
+    summary: "Find the right problem, and the boldest credible answer to it.",
+    steps: [
+      "Define hypotheses",
+      "UX research",
+      "User personas",
+      "Journey maps",
+      "Pain points",
+      "User stories",
+      "Design thinking",
+      "Rapid prototyping",
+    ],
+  },
+  {
+    title: "Implement",
+    summary: "Turn validated ideas into a product people understand at first glance.",
+    steps: [
+      "Task & user flows",
+      "Information architecture",
+      "Wireframes",
+      "Product branding",
+      "Design system",
+      "Interaction design",
+      "Visual design",
+    ],
+  },
+  {
+    title: "Improve",
+    summary: "Measure, learn, and refine after launch so the product keeps getting better.",
+    steps: [
+      "Experience strategy",
+      "UX/UI audit",
+      "Usability testing",
+      "Product analytics",
+      "UX/UI updates",
+      "Documentation",
+      "Development reviews",
+    ],
+  },
 ];

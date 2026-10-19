@@ -1,71 +1,80 @@
 import type { Metadata } from "next";
-// import { gsap } from 'gsap';
-// import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'; 
 
-import Offerings from "./offerings"
-import {ProjectsList} from "@/data/projects"; 
+import PageHero from "@/components/sections/PageHero";
+import SectionHeader from "@/components/sections/SectionHeader";
+import ProjectGrid from "@/components/sections/ProjectGrid";
+import CallToAction from "@/components/sections/CallToAction";
+import Approach from "@/components/sections/Approach";
+import { ButtonLink } from "@/components/ui/Button";
 
-// import GetInTouch from '@/components/GetInTouch'
-import Footer from "@/components/Footer";
-
-import Hero from "./Hero" 
-import Approach from './Approach';
-import Contact from '@/components/Contact';
- 
-// gsap.registerPlugin(ScrollTrigger)
-
-type Content = {
-    tags:string[];
-    title:string;
-    description:string;
-    url:string;
-}
-
-import GoodFlows from '@/assets/work/good-flows.webp'
-import GieseckeDevrient from '@/assets/work/giesecke- devrient.webp'
-import BookMyPooja from '@/assets/work/book-my-pooja.webp'
-import Project from "@/components/Project";
-import Reels from "../home/Reels";
+import { services } from "@/data/services";
+import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
-    title: "Our Services",
-    description: "Yume Labs is a boutique UX/UI Design, Identity Design, and Industrial Design agency in Bangalore, India helping ambitious brands scale globally through Experience-led Growth.",
+  title: "Services",
+  description:
+    "AI experiences, product innovation, and experience design. Yume Labs helps product teams design the right features and ship them with confidence.",
 };
 
+const ServicesPage = () => (
+  <>
+    <PageHero
+      eyebrow="Services"
+      title="UX for AI, and everything else."
+      description="Our work sits at the intersection of product innovation, experience design, and AI experiences."
+    >
+      <nav aria-label="Services" className="mt-4 flex flex-wrap gap-2">
+        {services.map((service) => (
+          <a
+            key={service.id}
+            href={`#${service.id}`}
+            className="rounded border border-line-strong px-3 py-2 text-sm text-muted transition-colors hover:bg-white/10 hover:text-white"
+          >
+            {service.title}
+          </a>
+        ))}
+      </nav>
+    </PageHero>
 
-const ServicesHome = () =>{  
-    const CoverImages = [GoodFlows,GieseckeDevrient,BookMyPooja]
+    {services.map((service, i) => (
+      <section key={service.id} id={service.id} className="scroll-mt-16 border-b border-line">
+        <div className="container-site grid gap-10 py-20 sm:py-24 lg:grid-cols-4 lg:gap-0">
+          <div className="flex flex-col gap-4 lg:sticky lg:top-28 lg:self-start lg:pr-8">
+            <span className="text-sm tabular-nums text-subtle">0{i + 1}</span>
+            <h2 className="heading-md">{service.title}</h2>
+            <p className="text-sm leading-relaxed text-muted">{service.summary}</p>
+          </div>
+          <div className="grid border-l border-t border-line sm:grid-cols-2 lg:col-span-3">
+            {service.offerings.map((offering) => (
+              <div key={offering.title} className="flex flex-col gap-3 border-b border-r border-line p-6 sm:p-8">
+                <h3 className="text-lg font-medium tracking-tight">{offering.title}</h3>
+                <p className="text-sm leading-relaxed text-muted">{offering.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))}
 
-    return(
-        <main className="container md:max-w-screen-2xl mx-auto px-4 md:px-24 flex flex-col"> 
-            <Hero/>
-            <Reels/>
-            <Offerings/>
-            <Approach/>
-            <section className='flex flex-col gap-16 md:py-32 py-24'>
-                <h2 className='md:text-4xl text-2xl leading-tight font-medium whitespace-break-spaces'>
-                    Selected 
-                    Projects</h2>
-                <div className='flex md:flex-row flex-col gap-2'>
-                    {
-                        ProjectsList.filter((item,i) => i<3 ).map((project:Content,i)=>(
-                            <div key={i} className='md:w-1/3'>
-                                <Project
-                                    title={project.title}
-                                    description={project.description}
-                                    tags={project.tags}
-                                    img={CoverImages[i]?.src}
-                                    url={project.url}
-                                    width="100%"/>
-                            </div>
-                        ))
-                    }
-                </div>
-            </section>
-            <Contact/>
-            <Footer/>
-        </main>
-    )
-}
+    <Approach />
 
-export default ServicesHome
+    <section className="border-b border-line">
+      <div className="container-site flex flex-col gap-12 py-20 sm:py-24 lg:py-32">
+        <SectionHeader
+          eyebrow="Selected work"
+          title="See the work in action."
+          action={
+            <ButtonLink href="/casestudies" variant="secondary" arrow>
+              All case studies
+            </ButtonLink>
+          }
+        />
+        <ProjectGrid projects={projects.slice(0, 3)} />
+      </div>
+    </section>
+
+    <CallToAction />
+  </>
+);
+
+export default ServicesPage;

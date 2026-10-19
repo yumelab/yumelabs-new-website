@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
-    output:'export',   
-    images: {
-        unoptimized: true,
-        domains: ['yumelabs.com','cms.yumelabs.com'],
-        formats: ['image/avif', 'image/webp'],
-    },
+  // Static export for Firebase Hosting; images are pre-optimised WebP, so Next's optimiser is off.
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

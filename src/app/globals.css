@@ -2,40 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth; 
+@layer base {
+  html {
+    @apply scroll-smooth bg-canvas text-white antialiased;
+    color-scheme: dark;
+  }
+
+  body {
+    /* No background here: the html canvas is black and GridGuides sits at -z-10 behind body. */
+    @apply min-h-screen overflow-x-hidden font-sans text-white;
+  }
+
+  ::selection {
+    @apply bg-white text-black;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-white;
+  }
 }
 
-*{
-  -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-  display: none;
-}
+@layer components {
+  /* Page-width wrapper shared by every section; edges line up with the grid guides. */
+  .container-site {
+    @apply mx-auto w-full max-w-site px-4 sm:px-6 lg:px-8;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb)); 
-  overflow-x: hidden;
+  .heading-xl {
+    @apply text-[2.75rem] font-medium leading-[0.95] tracking-tightest sm:text-6xl lg:text-7xl xl:text-[5.25rem];
+  }
+
+  .heading-lg {
+    @apply text-3xl font-medium leading-[1.05] tracking-heading sm:text-4xl lg:text-5xl;
+  }
+
+  .heading-md {
+    @apply text-2xl font-medium leading-tight tracking-heading sm:text-3xl;
+  }
+
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.14em] text-muted;
+  }
+
+  .prose-body {
+    @apply text-base leading-relaxed text-muted sm:text-lg;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
 }
 
-.ai-grid{
-  background-image: linear-gradient(rgba(255,255,255,0.3) .1em, transparent .1em), linear-gradient(90deg, rgba(255,255,255,0.3) .1em, transparent .1em);
-  background-size: 1.2em 1.2em;
-}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 
-.noise {
-  /* ... */
-  background: 
-    url(https://grainy-gradients.vercel.app/noise.svg);
-}
-
-
-.overlay{
-  border-image:fill 1 linear-gradient(hsla(0, 0%, 0%, 0.265) , hsla(0, 0%, 0%, 0.081)); 
+  .animate-marquee {
+    animation: none;
+  }
 }

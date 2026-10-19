@@ -1,35 +1,22 @@
-import Link from "next/link"; 
-import Footer from "@/components/Footer"; 
-import { AppRoutes } from '@/constants/routes';  
+import PageHero from "@/components/sections/PageHero";
+import { ButtonLink } from "@/components/ui/Button";
 
-const NotFound = () =>{
-    const message = "Don't worry! You are not lost. You've just found our secret page."
-    return(
-        <main className="container md:max-w-screen-xl mx-auto md:gap-32 px-8 md:px-0 flex flex-col"> 
-             <section className="h-screen flex flex-col gap-16 justify-center">
-                <h1 className="text-8xl">{message}</h1>  
-                <div className="flex gap-8 items-center"> 
-                    <h4 className="whitespace-nowrap font-semibold text-gray-600">Try our other pages</h4>
-                    <Link
-                        className='max-w-fit h-full whitespace-nowrap text-slate-500 text-sm border rounded-full px-12 py-4'
-                        href={AppRoutes.ABOUT_US}>
-                        Work
-                    </Link> 
-                    <Link
-                        className='max-w-fit h-full whitespace-nowrap text-slate-500 text-sm border rounded-full px-12 py-4'
-                        href={AppRoutes.ABOUT_US}>
-                        About Us
-                    </Link> 
-                    <Link
-                        className='max-w-fit h-full whitespace-nowrap text-slate-500 text-sm border rounded-full px-12 py-4'
-                        href={AppRoutes.SERVICES}>
-                        Services
-                    </Link> 
-                </div>
-             </section>
-            <Footer/>
-        </main>
-    )
-}
+const NotFound = () => (
+  <PageHero
+    eyebrow="404"
+    title="You're not lost. You've found our secret page."
+    description="The page you're looking for doesn't exist, but plenty of others do."
+  >
+    <div className="mt-4 flex flex-wrap gap-3">
+      <ButtonLink href="/">Back home</ButtonLink>
+      <ButtonLink href="/casestudies" variant="secondary">
+        Case studies
+      </ButtonLink>
+      <ButtonLink href="/services" variant="secondary">
+        Services
+      </ButtonLink>
+    </div>
+  </PageHero>
+);
 
-export default NotFound
+export default NotFound;

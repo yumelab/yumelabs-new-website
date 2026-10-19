@@ -1,60 +1,71 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Footer from "@/components/Footer";  
-import MailForm from './MailForm'; 
-import Engage from "@/components/Engage";
 
-import PritamSaha from '@/assets/founders/pritam.png'
+import PageHero from "@/components/sections/PageHero";
+import ContactForm from "./ContactForm";
+import { site } from "@/data/site";
+import { founders } from "@/data/team";
 
 export const metadata: Metadata = {
-    title: "Contact Us",
-    description: "Yume Labs is a boutique UX/UI Design, Identity Design, and Industrial Design agency in Bangalore, India helping ambitious brands scale globally through Experience-led Growth.",
+  title: "Contact",
+  description: "Tell us what you're building. A Yume Labs founder reads every message and replies within 12 hours.",
 };
 
-const Main = () =>{
-    const message = " I read every message. I will personally get back to you within 12 hours."
-    return(
-        <main className="container md:max-w-screen-xl mx-auto px-8 md:px-0 flex flex-col gap-8 md:gap-0">
-            <div className="py-16 flex flex-col gap-4 md:py-32">
-                <h2 className="md:text-5xl  text-3xl font-medium md:w-2/3 leading-tight text-black">Ready to Simplify Your Next?</h2> 
-                <p>We’re step one on your journey to a brand that stands apart!</p>
-            </div>
-            <section className="grid md:grid-cols-2 md:gap-16 gap-8"> 
-                <div className="flex flex-col min-h-fit items-center justify-start"> 
-                    <div className="relative w-full md:h-full h-72 overflow-hidden">
-                        <div  className="absolute top-0 left-0 rounded-full w-full h-full z-20 animate-spin-slow">
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="h-full w-full rounded-full">
-                                <path id="circlePath" fill="none" strokeWidth="0" d="
-                                    M 10, 50
-                                    a 40,40 0 1,1 80,0
-                                    a 40,40 0 1,1 -80,0
-                                    " />
-                                <text fontSize="7">
-                                <textPath id="textPath" href="#circlePath"> {message}</textPath>
-                                </text>
-                            </svg>
-                        </div>
-                        <div className="absolute flex items-center justify-center w-full h-full aspect-square p-10 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 rounded-full overflow-hidden z-10">
-                            <Image
-                                alt="pritam-saha-contact-us"
-                                className="object-contain aspect-square bg-gray-100 rounded-full"
-                                src={PritamSaha}
-                                width={400}
-                                height={400}
-                            />
-                        </div>
-                    </div>
-                    <p className="text-xs md:text-base">Pritam Saha, Chief Executive Officer</p>
-                </div>
-                <div className="flex gap-8 flex-col">
-                    <h2 className="md:text-4xl text-2xl">How can we help?</h2>
-                    <MailForm/>
-                </div> 
-            </section>
-            <Engage/> 
-            <Footer/>
-        </main>
-    )
-}
+const ceo = founders[0];
 
-export default Main
+const ContactPage = () => (
+  <>
+    <PageHero
+      eyebrow="Contact"
+      title="Ready to simplify your next?"
+      description="We're step one on your journey to a product that stands apart."
+    />
+
+    <section className="border-b border-line">
+      <div className="container-site grid gap-12 py-16 sm:py-20 lg:grid-cols-4 lg:gap-0 lg:py-24">
+        <aside className="flex flex-col gap-8 lg:pr-8">
+          <div className="flex items-center gap-4">
+            <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border border-line bg-surface-raised">
+              <Image src={ceo.photo} alt={ceo.name} fill sizes="56px" className="object-cover object-top" />
+            </div>
+            <div>
+              <p className="text-sm font-medium">{ceo.name}</p>
+              <p className="text-xs text-muted">{ceo.role}</p>
+            </div>
+          </div>
+          <p className="text-sm leading-relaxed text-muted">
+            &ldquo;I read every message. I will personally get back to you within 12 hours.&rdquo;
+          </p>
+          <dl className="flex flex-col gap-5 border-t border-line pt-8 text-sm">
+            <div className="flex flex-col gap-1">
+              <dt className="eyebrow">Email</dt>
+              <dd>
+                <a href={`mailto:${site.email}`} className="hover:underline hover:underline-offset-4">
+                  {site.email}
+                </a>
+              </dd>
+            </div>
+            <div className="flex flex-col gap-1">
+              <dt className="eyebrow">Phone</dt>
+              <dd>
+                <a href={site.phoneHref} className="hover:underline hover:underline-offset-4">
+                  {site.phone}
+                </a>
+              </dd>
+            </div>
+            <div className="flex flex-col gap-1">
+              <dt className="eyebrow">Studio</dt>
+              <dd className="leading-relaxed text-muted">{site.address}</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <div className="lg:col-span-3 lg:border-l lg:border-line lg:pl-8">
+          <ContactForm />
+        </div>
+      </div>
+    </section>
+  </>
+);
+
+export default ContactPage;

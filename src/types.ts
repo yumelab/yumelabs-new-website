@@ -1,52 +1,49 @@
-export type DefaultType = {
-    title:string;
-    description:string;
-} 
+import type { StaticImageData } from "next/image";
 
-export type ProjectType = {
-    tags:string[];
-    title:string;
-    description:string;
-    cover:string;
-    url:string;
-}
+export type ImageAsset = {
+  src: string | StaticImageData;
+  alt: string;
+  width?: number;
+  height?: number;
+};
 
-export type BlogInfo = {
-    label:string; 
-    value:string;
-}
+export type CaseStudySection = {
+  eyebrow: string;
+  title: string;
+  body: string[];
+  image?: ImageAsset;
+};
 
-export type ProjectDetails = {
-    problem:string; 
-    scope:string;
-}
+export type CaseStudyHighlight = {
+  title: string;
+  body: string;
+  image?: ImageAsset;
+};
 
-export type ProjectIntroduction = {
-    company:string; 
-    title:string; 
-    summary:string;
-}
+export type Project = {
+  slug: string;
+  client: string;
+  /** One-liner used on cards. */
+  summary: string;
+  /** Long-form title shown at the top of the case study. */
+  headline: string;
+  intro: string;
+  cover: StaticImageData;
+  tags: string[];
+  industry: string;
+  services: string[];
+  location?: string;
+  hero?: ImageAsset;
+  challenge: string;
+  scope: string;
+  sections: CaseStudySection[];
+  highlights: CaseStudyHighlight[];
+  gallery?: ImageAsset[];
+};
 
-export type Typography = {
-    title: string;
-    description:string;
-    more:string; 
-}
-
-export type ProblemType = {
-    detail:string;
-    image:string;
-}
-
-export type ProblemsContent = {
-    title: string; 
-    description:string;
-    list:Array<ProblemType>;
-}
-
-
-export type ProblemDetails = {
-    image:string;
-    title:string;
-    description:string;
-}
+export type Testimonial = {
+  message: string;
+  name: string;
+  role: string;
+  company: string;
+};
